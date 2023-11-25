@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "bsp_spi.h": "c",
+        "bsp_nafe11388.h": "c",
+        "nafe11388_if.h": "c"
+    }
+}

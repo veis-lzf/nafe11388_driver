@@ -192,7 +192,96 @@ Section Cross References
     startup_at32f435_437.o(RESET) refers to at32f435_437_int.o(i.SysTick_Handler) for SysTick_Handler
     startup_at32f435_437.o(.text) refers to system_at32f435_437.o(i.SystemInit) for SystemInit
     startup_at32f435_437.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    main.o(i.main) refers to memseta.o(.text) for __aeabi_memclr4
     main.o(i.main) refers to at32f435_437_clock.o(i.system_clock_config) for system_clock_config
+    main.o(i.main) refers to nafe11388_if.o(i.nafe11388_init) for nafe11388_init
+    main.o(i.main) refers to nafe11388_if.o(i.nafe11388_startSample) for nafe11388_startSample
+    nafe11388_if.o(i.nafe11388_init) refers to nafe11388_if.o(i.nafe1138_gpio_config) for nafe1138_gpio_config
+    nafe11388_if.o(i.nafe11388_init) refers to bsp_spi.o(i.bsp_spi_config) for bsp_spi_config
+    nafe11388_if.o(i.nafe11388_init) refers to bsp_nafe11388.o(i.NAFE_init) for NAFE_init
+    nafe11388_if.o(i.nafe11388_init) refers to nafe11388_if.o(.data) for gs_XferHdl
+    nafe11388_if.o(i.nafe11388_startSample) refers to bsp_nafe11388.o(i.NAFE_startSample) for NAFE_startSample
+    nafe11388_if.o(i.nafe11388_startSample) refers to nafe11388_if.o(.data) for gs_XferHdl
+    nafe11388_if.o(i.nafe1138_gpio_config) refers to at32f435_437_crm.o(i.crm_periph_clock_enable) for crm_periph_clock_enable
+    nafe11388_if.o(i.nafe1138_gpio_config) refers to at32f435_437_gpio.o(i.gpio_default_para_init) for gpio_default_para_init
+    nafe11388_if.o(i.nafe1138_gpio_config) refers to at32f435_437_gpio.o(i.gpio_init) for gpio_init
+    bsp_spi.o(i.bsp_register_callback) refers to bsp_spi.o(.data) for transmit_callback_func
+    bsp_spi.o(i.bsp_spi_config) refers to bsp_spi.o(i.bsp_spi_gpio_config) for bsp_spi_gpio_config
+    bsp_spi.o(i.bsp_spi_config) refers to at32f435_437_spi.o(i.spi_default_para_init) for spi_default_para_init
+    bsp_spi.o(i.bsp_spi_config) refers to at32f435_437_crm.o(i.crm_periph_clock_enable) for crm_periph_clock_enable
+    bsp_spi.o(i.bsp_spi_config) refers to at32f435_437_spi.o(i.spi_init) for spi_init
+    bsp_spi.o(i.bsp_spi_config) refers to at32f435_437_spi.o(i.spi_enable) for spi_enable
+    bsp_spi.o(i.bsp_spi_gpio_config) refers to at32f435_437_crm.o(i.crm_periph_clock_enable) for crm_periph_clock_enable
+    bsp_spi.o(i.bsp_spi_gpio_config) refers to at32f435_437_gpio.o(i.gpio_default_para_init) for gpio_default_para_init
+    bsp_spi.o(i.bsp_spi_gpio_config) refers to at32f435_437_gpio.o(i.gpio_init) for gpio_init
+    bsp_spi.o(i.bsp_spi_gpio_config) refers to at32f435_437_gpio.o(i.gpio_pin_mux_config) for gpio_pin_mux_config
+    bsp_spi.o(i.bsp_spi_received_byte) refers to bsp_spi.o(i.bsp_spi_received_halfword) for bsp_spi_received_halfword
+    bsp_spi.o(i.bsp_spi_received_done) refers to bsp_spi.o(.data) for received_callback_func
+    bsp_spi.o(i.bsp_spi_received_halfword) refers to at32f435_437_spi.o(i.spi_i2s_flag_get) for spi_i2s_flag_get
+    bsp_spi.o(i.bsp_spi_received_halfword) refers to at32f435_437_spi.o(i.spi_i2s_data_receive) for spi_i2s_data_receive
+    bsp_spi.o(i.bsp_spi_received_halfword) refers to bsp_spi.o(i.bsp_spi_received_done) for bsp_spi_received_done
+    bsp_spi.o(i.bsp_spi_set_cs) refers to at32f435_437_gpio.o(i.gpio_bits_reset) for gpio_bits_reset
+    bsp_spi.o(i.bsp_spi_set_cs) refers to at32f435_437_gpio.o(i.gpio_bits_set) for gpio_bits_set
+    bsp_spi.o(i.bsp_spi_transmit_byte) refers to bsp_spi.o(i.bsp_spi_transmit_halfword) for bsp_spi_transmit_halfword
+    bsp_spi.o(i.bsp_spi_transmit_done) refers to bsp_spi.o(.data) for transmit_callback_func
+    bsp_spi.o(i.bsp_spi_transmit_halfword) refers to at32f435_437_spi.o(i.spi_i2s_flag_get) for spi_i2s_flag_get
+    bsp_spi.o(i.bsp_spi_transmit_halfword) refers to at32f435_437_spi.o(i.spi_i2s_data_transmit) for spi_i2s_data_transmit
+    bsp_spi.o(i.bsp_spi_transmit_halfword) refers to bsp_spi.o(i.bsp_spi_transmit_done) for bsp_spi_transmit_done
+    bsp_nafe11388.o(i.NAFE_HAL_readRegBlock) refers to bsp_spi.o(i.bsp_spi_set_cs) for bsp_spi_set_cs
+    bsp_nafe11388.o(i.NAFE_HAL_readRegBlock) refers to bsp_spi.o(i.bsp_spi_transmit_byte) for bsp_spi_transmit_byte
+    bsp_nafe11388.o(i.NAFE_HAL_readRegBlock) refers to bsp_spi.o(i.bsp_spi_received_byte) for bsp_spi_received_byte
+    bsp_nafe11388.o(i.NAFE_HAL_sendCmdBlock) refers to bsp_spi.o(i.bsp_spi_set_cs) for bsp_spi_set_cs
+    bsp_nafe11388.o(i.NAFE_HAL_sendCmdBlock) refers to bsp_spi.o(i.bsp_spi_transmit_byte) for bsp_spi_transmit_byte
+    bsp_nafe11388.o(i.NAFE_HAL_writeRegBlock) refers to bsp_spi.o(i.bsp_spi_set_cs) for bsp_spi_set_cs
+    bsp_nafe11388.o(i.NAFE_HAL_writeRegBlock) refers to bsp_spi.o(i.bsp_spi_transmit_byte) for bsp_spi_transmit_byte
+    bsp_nafe11388.o(i.NAFE_formatResultArray) refers to f2d.o(.text) for __aeabi_f2d
+    bsp_nafe11388.o(i.NAFE_formatResultArray) refers to dflti.o(.text) for __aeabi_i2d
+    bsp_nafe11388.o(i.NAFE_formatResultArray) refers to dmul.o(.text) for __aeabi_dmul
+    bsp_nafe11388.o(i.NAFE_formatResultArray) refers to ddiv.o(.text) for __aeabi_ddiv
+    bsp_nafe11388.o(i.NAFE_init) refers to bsp_nafe11388.o(i.NAFE_resetDevice) for NAFE_resetDevice
+    bsp_nafe11388.o(i.NAFE_init) refers to bsp_nafe11388.o(i.NAFE_readRegBlock) for NAFE_readRegBlock
+    bsp_nafe11388.o(i.NAFE_init) refers to bsp_nafe11388.o(i.NAFE_setChannel) for NAFE_setChannel
+    bsp_nafe11388.o(i.NAFE_init) refers to bsp_nafe11388.o(i.NAFE_writeRegBlock) for NAFE_writeRegBlock
+    bsp_nafe11388.o(i.NAFE_mccrBlock) refers to bsp_nafe11388.o(i.NAFE_triggerSample) for NAFE_triggerSample
+    bsp_nafe11388.o(i.NAFE_mccrBlock) refers to bsp_nafe11388.o(i.NAFE_readRegBlock) for NAFE_readRegBlock
+    bsp_nafe11388.o(i.NAFE_mccrBlock) refers to bsp_nafe11388.o(i.NAFE_HAL_delay) for NAFE_HAL_delay
+    bsp_nafe11388.o(i.NAFE_mccrBlock) refers to bsp_nafe11388.o(i.NAFE_terminateContiSample) for NAFE_terminateContiSample
+    bsp_nafe11388.o(i.NAFE_mccrBlock) refers to bsp_nafe11388.o(i.NAFE_formatResultArray) for NAFE_formatResultArray
+    bsp_nafe11388.o(i.NAFE_mcmrBlock) refers to bsp_nafe11388.o(i.NAFE_triggerSample) for NAFE_triggerSample
+    bsp_nafe11388.o(i.NAFE_mcmrBlock) refers to bsp_nafe11388.o(i.NAFE_readRegBlock) for NAFE_readRegBlock
+    bsp_nafe11388.o(i.NAFE_mcmrBlock) refers to bsp_nafe11388.o(i.NAFE_HAL_delay) for NAFE_HAL_delay
+    bsp_nafe11388.o(i.NAFE_mcmrBlock) refers to bsp_nafe11388.o(i.NAFE_formatResultArray) for NAFE_formatResultArray
+    bsp_nafe11388.o(i.NAFE_mcsrBlock) refers to bsp_nafe11388.o(i.NAFE_readRegBlock) for NAFE_readRegBlock
+    bsp_nafe11388.o(i.NAFE_mcsrBlock) refers to bsp_nafe11388.o(i.NAFE_triggerSample) for NAFE_triggerSample
+    bsp_nafe11388.o(i.NAFE_mcsrBlock) refers to bsp_nafe11388.o(i.NAFE_formatResultArray) for NAFE_formatResultArray
+    bsp_nafe11388.o(i.NAFE_readRegBlock) refers to bsp_nafe11388.o(i.NAFE_combCmdForAccessRegs) for NAFE_combCmdForAccessRegs
+    bsp_nafe11388.o(i.NAFE_readRegBlock) refers to bsp_nafe11388.o(i.NAFE_HAL_readRegBlock) for NAFE_HAL_readRegBlock
+    bsp_nafe11388.o(i.NAFE_resetDevice) refers to bsp_nafe11388.o(i.NAFE_sendCmdBlock) for NAFE_sendCmdBlock
+    bsp_nafe11388.o(i.NAFE_resetDevice) refers to bsp_nafe11388.o(i.NAFE_HAL_delay) for NAFE_HAL_delay
+    bsp_nafe11388.o(i.NAFE_sccrBlock) refers to bsp_nafe11388.o(i.NAFE_triggerSample) for NAFE_triggerSample
+    bsp_nafe11388.o(i.NAFE_sccrBlock) refers to bsp_nafe11388.o(i.NAFE_HAL_delay) for NAFE_HAL_delay
+    bsp_nafe11388.o(i.NAFE_sccrBlock) refers to bsp_nafe11388.o(i.NAFE_readRegBlock) for NAFE_readRegBlock
+    bsp_nafe11388.o(i.NAFE_sccrBlock) refers to bsp_nafe11388.o(i.NAFE_terminateContiSample) for NAFE_terminateContiSample
+    bsp_nafe11388.o(i.NAFE_sccrBlock) refers to bsp_nafe11388.o(i.NAFE_formatResultArray) for NAFE_formatResultArray
+    bsp_nafe11388.o(i.NAFE_scsrBlock) refers to bsp_nafe11388.o(i.NAFE_triggerSample) for NAFE_triggerSample
+    bsp_nafe11388.o(i.NAFE_scsrBlock) refers to bsp_nafe11388.o(i.NAFE_readRegBlock) for NAFE_readRegBlock
+    bsp_nafe11388.o(i.NAFE_scsrBlock) refers to bsp_nafe11388.o(i.NAFE_HAL_delay) for NAFE_HAL_delay
+    bsp_nafe11388.o(i.NAFE_scsrBlock) refers to bsp_nafe11388.o(i.NAFE_formatResultArray) for NAFE_formatResultArray
+    bsp_nafe11388.o(i.NAFE_sendCmdBlock) refers to bsp_nafe11388.o(i.NAFE_combCmdForInstructionCmds) for NAFE_combCmdForInstructionCmds
+    bsp_nafe11388.o(i.NAFE_sendCmdBlock) refers to bsp_nafe11388.o(i.NAFE_HAL_sendCmdBlock) for NAFE_HAL_sendCmdBlock
+    bsp_nafe11388.o(i.NAFE_setChannel) refers to bsp_nafe11388.o(i.NAFE_sendCmdBlock) for NAFE_sendCmdBlock
+    bsp_nafe11388.o(i.NAFE_startSample) refers to bsp_nafe11388.o(i.NAFE_readRegBlock) for NAFE_readRegBlock
+    bsp_nafe11388.o(i.NAFE_startSample) refers to bsp_nafe11388.o(i.NAFE_setChannel) for NAFE_setChannel
+    bsp_nafe11388.o(i.NAFE_startSample) refers to bsp_nafe11388.o(i.NAFE_scsrBlock) for NAFE_scsrBlock
+    bsp_nafe11388.o(i.NAFE_startSample) refers to bsp_nafe11388.o(i.NAFE_sccrBlock) for NAFE_sccrBlock
+    bsp_nafe11388.o(i.NAFE_startSample) refers to bsp_nafe11388.o(i.NAFE_mcsrBlock) for NAFE_mcsrBlock
+    bsp_nafe11388.o(i.NAFE_startSample) refers to bsp_nafe11388.o(i.NAFE_mcmrBlock) for NAFE_mcmrBlock
+    bsp_nafe11388.o(i.NAFE_startSample) refers to bsp_nafe11388.o(i.NAFE_mccrBlock) for NAFE_mccrBlock
+    bsp_nafe11388.o(i.NAFE_terminateContiSample) refers to bsp_nafe11388.o(i.NAFE_sendCmdBlock) for NAFE_sendCmdBlock
+    bsp_nafe11388.o(i.NAFE_terminateContiSample) refers to bsp_nafe11388.o(i.NAFE_HAL_delay) for NAFE_HAL_delay
+    bsp_nafe11388.o(i.NAFE_triggerSample) refers to bsp_nafe11388.o(i.NAFE_sendCmdBlock) for NAFE_sendCmdBlock
+    bsp_nafe11388.o(i.NAFE_writeRegBlock) refers to bsp_nafe11388.o(i.NAFE_combCmdForAccessRegs) for NAFE_combCmdForAccessRegs
+    bsp_nafe11388.o(i.NAFE_writeRegBlock) refers to bsp_nafe11388.o(i.NAFE_HAL_writeRegBlock) for NAFE_HAL_writeRegBlock
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
@@ -202,6 +291,13 @@ Section Cross References
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
     uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
     uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
     entry2.o(.ARM.Collect$$$$00002712) refers to startup_at32f435_437.o(STACK) for __initial_sp
     entry2.o(__vectab_stack_and_reset_area) refers to startup_at32f435_437.o(STACK) for __initial_sp
@@ -209,6 +305,8 @@ Section Cross References
     entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
     entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
     entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
     init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
 
 
@@ -337,7 +435,7 @@ Removing Unused input sections from the image.
     Removing at32f435_437_crm.o(i.crm_clock_failure_detection_enable), (20 bytes).
     Removing at32f435_437_crm.o(i.crm_clock_out1_set), (20 bytes).
     Removing at32f435_437_crm.o(i.crm_clock_out2_set), (56 bytes).
-    Removing at32f435_437_crm.o(i.crm_clocks_freq_get), (272 bytes).
+    Removing at32f435_437_crm.o(i.crm_clocks_freq_get), (276 bytes).
     Removing at32f435_437_crm.o(i.crm_emac_output_pulse_set), (20 bytes).
     Removing at32f435_437_crm.o(i.crm_ertc_clock_enable), (20 bytes).
     Removing at32f435_437_crm.o(i.crm_ertc_clock_select), (36 bytes).
@@ -601,16 +699,11 @@ Removing Unused input sections from the image.
     Removing at32f435_437_gpio.o(.rev16_text), (4 bytes).
     Removing at32f435_437_gpio.o(.revsh_text), (4 bytes).
     Removing at32f435_437_gpio.o(.rrx_text), (6 bytes).
-    Removing at32f435_437_gpio.o(i.gpio_bits_reset), (4 bytes).
-    Removing at32f435_437_gpio.o(i.gpio_bits_set), (4 bytes).
     Removing at32f435_437_gpio.o(i.gpio_bits_write), (10 bytes).
-    Removing at32f435_437_gpio.o(i.gpio_default_para_init), (20 bytes).
-    Removing at32f435_437_gpio.o(i.gpio_init), (122 bytes).
     Removing at32f435_437_gpio.o(i.gpio_input_data_bit_read), (18 bytes).
     Removing at32f435_437_gpio.o(i.gpio_input_data_read), (8 bytes).
     Removing at32f435_437_gpio.o(i.gpio_output_data_bit_read), (18 bytes).
     Removing at32f435_437_gpio.o(i.gpio_output_data_read), (8 bytes).
-    Removing at32f435_437_gpio.o(i.gpio_pin_mux_config), (66 bytes).
     Removing at32f435_437_gpio.o(i.gpio_pin_wp_config), (18 bytes).
     Removing at32f435_437_gpio.o(i.gpio_pins_huge_driven_config), (18 bytes).
     Removing at32f435_437_gpio.o(i.gpio_port_write), (4 bytes).
@@ -761,21 +854,15 @@ Removing Unused input sections from the image.
     Removing at32f435_437_spi.o(i.spi_crc_polynomial_get), (8 bytes).
     Removing at32f435_437_spi.o(i.spi_crc_polynomial_set), (10 bytes).
     Removing at32f435_437_spi.o(i.spi_crc_value_get), (18 bytes).
-    Removing at32f435_437_spi.o(i.spi_default_para_init), (22 bytes).
-    Removing at32f435_437_spi.o(i.spi_enable), (10 bytes).
     Removing at32f435_437_spi.o(i.spi_frame_bit_num_set), (10 bytes).
     Removing at32f435_437_spi.o(i.spi_half_duplex_direction_set), (10 bytes).
     Removing at32f435_437_spi.o(i.spi_hardware_cs_output_enable), (10 bytes).
-    Removing at32f435_437_spi.o(i.spi_i2s_data_receive), (8 bytes).
-    Removing at32f435_437_spi.o(i.spi_i2s_data_transmit), (4 bytes).
     Removing at32f435_437_spi.o(i.spi_i2s_dma_receiver_enable), (10 bytes).
     Removing at32f435_437_spi.o(i.spi_i2s_dma_transmitter_enable), (10 bytes).
     Removing at32f435_437_spi.o(i.spi_i2s_flag_clear), (58 bytes).
-    Removing at32f435_437_spi.o(i.spi_i2s_flag_get), (16 bytes).
     Removing at32f435_437_spi.o(i.spi_i2s_interrupt_enable), (18 bytes).
     Removing at32f435_437_spi.o(i.spi_i2s_interrupt_flag_get), (186 bytes).
     Removing at32f435_437_spi.o(i.spi_i2s_reset), (132 bytes).
-    Removing at32f435_437_spi.o(i.spi_init), (344 bytes).
     Removing at32f435_437_spi.o(i.spi_software_cs_internal_level_set), (10 bytes).
     Removing at32f435_437_spi.o(i.spi_ti_mode_enable), (10 bytes).
     Removing at32f435_437_tmr.o(.rev16_text), (4 bytes).
@@ -993,8 +1080,18 @@ Removing Unused input sections from the image.
     Removing main.o(.rev16_text), (4 bytes).
     Removing main.o(.revsh_text), (4 bytes).
     Removing main.o(.rrx_text), (6 bytes).
+    Removing nafe11388_if.o(.rev16_text), (4 bytes).
+    Removing nafe11388_if.o(.revsh_text), (4 bytes).
+    Removing nafe11388_if.o(.rrx_text), (6 bytes).
+    Removing bsp_spi.o(.rev16_text), (4 bytes).
+    Removing bsp_spi.o(.revsh_text), (4 bytes).
+    Removing bsp_spi.o(.rrx_text), (6 bytes).
+    Removing bsp_spi.o(i.bsp_register_callback), (20 bytes).
+    Removing bsp_nafe11388.o(.rev16_text), (4 bytes).
+    Removing bsp_nafe11388.o(.revsh_text), (4 bytes).
+    Removing bsp_nafe11388.o(.rrx_text), (6 bytes).
 
-777 unused section(s) (total 31542 bytes) removed from the image.
+776 unused section(s) (total 30988 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1004,22 +1101,30 @@ Image Symbol Table
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
+    ../clib/../cmprslib/zerorunl2.c          0x00000000   Number         0  __dczerorl2.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dflti.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
     ..\..\UsrApp\main.c                      0x00000000   Number         0  main.o ABSOLUTE
     ..\..\bsp\cmsis\cm4\device_support\startup\mdk\startup_at32f435_437.s 0x00000000   Number         0  startup_at32f435_437.o ABSOLUTE
     ..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.c 0x00000000   Number         0  system_at32f435_437.o ABSOLUTE
@@ -1053,6 +1158,9 @@ Image Symbol Table
     ..\..\bsp\drivers\src\at32f435_437_xmc.c 0x00000000   Number         0  at32f435_437_xmc.o ABSOLUTE
     ..\..\bsp\platform\src\at32f435_437_clock.c 0x00000000   Number         0  at32f435_437_clock.o ABSOLUTE
     ..\..\bsp\platform\src\at32f435_437_int.c 0x00000000   Number         0  at32f435_437_int.o ABSOLUTE
+    ..\..\devices\nafe11388_if.c             0x00000000   Number         0  nafe11388_if.o ABSOLUTE
+    ..\..\drivers\bsp_nafe11388.c            0x00000000   Number         0  bsp_nafe11388.o ABSOLUTE
+    ..\..\drivers\bsp_spi.c                  0x00000000   Number         0  bsp_spi.o ABSOLUTE
     ..\\..\\UsrApp\\main.c                   0x00000000   Number         0  main.o ABSOLUTE
     ..\\..\\bsp\\cmsis\\cm4\\device_support\\system_at32f435_437.c 0x00000000   Number         0  system_at32f435_437.o ABSOLUTE
     ..\\..\\bsp\\drivers\\src\\at32f435_437_acc.c 0x00000000   Number         0  at32f435_437_acc.o ABSOLUTE
@@ -1085,6 +1193,9 @@ Image Symbol Table
     ..\\..\\bsp\\drivers\\src\\at32f435_437_xmc.c 0x00000000   Number         0  at32f435_437_xmc.o ABSOLUTE
     ..\\..\\bsp\\platform\\src\\at32f435_437_clock.c 0x00000000   Number         0  at32f435_437_clock.o ABSOLUTE
     ..\\..\\bsp\\platform\\src\\at32f435_437_int.c 0x00000000   Number         0  at32f435_437_int.o ABSOLUTE
+    ..\\..\\devices\\nafe11388_if.c          0x00000000   Number         0  nafe11388_if.o ABSOLUTE
+    ..\\..\\drivers\\bsp_nafe11388.c         0x00000000   Number         0  bsp_nafe11388.o ABSOLUTE
+    ..\\..\\drivers\\bsp_spi.c               0x00000000   Number         0  bsp_spi.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
     handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
     init.s                                   0x00000000   Number         0  init.o ABSOLUTE
@@ -1102,52 +1213,130 @@ Image Symbol Table
     .text                                    0x08000220   Section       36  startup_at32f435_437.o(.text)
     $v0                                      0x08000220   Number         0  startup_at32f435_437.o(.text)
     .text                                    0x08000244   Section        0  uldiv.o(.text)
-    .text                                    0x080002a6   Section        0  llshl.o(.text)
-    .text                                    0x080002c4   Section        0  llushr.o(.text)
-    .text                                    0x080002e4   Section       36  init.o(.text)
-    i.BusFault_Handler                       0x08000308   Section        0  at32f435_437_int.o(i.BusFault_Handler)
-    i.DebugMon_Handler                       0x0800030c   Section        0  at32f435_437_int.o(i.DebugMon_Handler)
-    i.HardFault_Handler                      0x0800030e   Section        0  at32f435_437_int.o(i.HardFault_Handler)
-    i.MemManage_Handler                      0x08000312   Section        0  at32f435_437_int.o(i.MemManage_Handler)
-    i.NMI_Handler                            0x08000316   Section        0  at32f435_437_int.o(i.NMI_Handler)
-    i.PendSV_Handler                         0x08000318   Section        0  at32f435_437_int.o(i.PendSV_Handler)
-    i.SVC_Handler                            0x0800031a   Section        0  at32f435_437_int.o(i.SVC_Handler)
-    i.SysTick_Handler                        0x0800031c   Section        0  at32f435_437_int.o(i.SysTick_Handler)
-    i.SystemInit                             0x08000320   Section        0  system_at32f435_437.o(i.SystemInit)
-    i.UsageFault_Handler                     0x080003b0   Section        0  at32f435_437_int.o(i.UsageFault_Handler)
-    i.__scatterload_copy                     0x080003b4   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x080003c2   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x080003c4   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i.crm_ahb_div_set                        0x080003d4   Section        0  at32f435_437_crm.o(i.crm_ahb_div_set)
-    i.crm_apb1_div_set                       0x080003e8   Section        0  at32f435_437_crm.o(i.crm_apb1_div_set)
-    i.crm_apb2_div_set                       0x080003fc   Section        0  at32f435_437_crm.o(i.crm_apb2_div_set)
-    i.crm_auto_step_mode_enable              0x08000410   Section        0  at32f435_437_crm.o(i.crm_auto_step_mode_enable)
-    i.crm_clock_source_enable                0x08000438   Section        0  at32f435_437_crm.o(i.crm_clock_source_enable)
-    i.crm_flag_get                           0x080004a0   Section        0  at32f435_437_crm.o(i.crm_flag_get)
-    i.crm_hext_stable_wait                   0x080004d0   Section        0  at32f435_437_crm.o(i.crm_hext_stable_wait)
-    i.crm_periph_clock_enable                0x08000500   Section        0  at32f435_437_crm.o(i.crm_periph_clock_enable)
-    i.crm_pll_config                         0x0800054c   Section        0  at32f435_437_crm.o(i.crm_pll_config)
-    i.crm_reset                              0x08000594   Section        0  at32f435_437_crm.o(i.crm_reset)
-    i.crm_sysclk_switch                      0x0800060c   Section        0  at32f435_437_crm.o(i.crm_sysclk_switch)
-    i.crm_sysclk_switch_status_get           0x08000648   Section        0  at32f435_437_crm.o(i.crm_sysclk_switch_status_get)
-    i.main                                   0x08000658   Section        0  main.o(i.main)
-    i.system_clock_config                    0x08000660   Section        0  at32f435_437_clock.o(i.system_clock_config)
-    i.system_core_clock_update               0x080006fc   Section        0  system_at32f435_437.o(i.system_core_clock_update)
-    .constdata                               0x080007ec   Section       22  system_at32f435_437.o(.constdata)
-    sys_ahb_div_table                        0x080007ec   Data          16  system_at32f435_437.o(.constdata)
-    pll_fr_table                             0x080007fc   Data           6  system_at32f435_437.o(.constdata)
+    .text                                    0x080002a6   Section        0  memseta.o(.text)
+    .text                                    0x080002ca   Section        0  dmul.o(.text)
+    .text                                    0x080003ae   Section        0  ddiv.o(.text)
+    .text                                    0x0800048c   Section        0  dflti.o(.text)
+    .text                                    0x080004ae   Section        0  f2d.o(.text)
+    .text                                    0x080004d4   Section        0  llshl.o(.text)
+    .text                                    0x080004f2   Section        0  llushr.o(.text)
+    .text                                    0x08000512   Section        0  iusefp.o(.text)
+    .text                                    0x08000512   Section        0  depilogue.o(.text)
+    .text                                    0x080005cc   Section       36  init.o(.text)
+    .text                                    0x080005f0   Section        0  __dczerorl2.o(.text)
+    i.BusFault_Handler                       0x08000646   Section        0  at32f435_437_int.o(i.BusFault_Handler)
+    i.DebugMon_Handler                       0x0800064a   Section        0  at32f435_437_int.o(i.DebugMon_Handler)
+    i.HardFault_Handler                      0x0800064c   Section        0  at32f435_437_int.o(i.HardFault_Handler)
+    i.MemManage_Handler                      0x08000650   Section        0  at32f435_437_int.o(i.MemManage_Handler)
+    i.NAFE_HAL_delay                         0x08000654   Section        0  bsp_nafe11388.o(i.NAFE_HAL_delay)
+    NAFE_HAL_delay                           0x08000655   Thumb Code    54  bsp_nafe11388.o(i.NAFE_HAL_delay)
+    i.NAFE_HAL_readRegBlock                  0x0800068a   Section        0  bsp_nafe11388.o(i.NAFE_HAL_readRegBlock)
+    i.NAFE_HAL_sendCmdBlock                  0x080006e0   Section        0  bsp_nafe11388.o(i.NAFE_HAL_sendCmdBlock)
+    i.NAFE_HAL_writeRegBlock                 0x08000706   Section        0  bsp_nafe11388.o(i.NAFE_HAL_writeRegBlock)
+    i.NAFE_combCmdForAccessRegs              0x08000754   Section        0  bsp_nafe11388.o(i.NAFE_combCmdForAccessRegs)
+    NAFE_combCmdForAccessRegs                0x08000755   Thumb Code    28  bsp_nafe11388.o(i.NAFE_combCmdForAccessRegs)
+    i.NAFE_combCmdForInstructionCmds         0x08000770   Section        0  bsp_nafe11388.o(i.NAFE_combCmdForInstructionCmds)
+    NAFE_combCmdForInstructionCmds           0x08000771   Thumb Code    18  bsp_nafe11388.o(i.NAFE_combCmdForInstructionCmds)
+    i.NAFE_formatResultArray                 0x08000784   Section        0  bsp_nafe11388.o(i.NAFE_formatResultArray)
+    NAFE_formatResultArray                   0x08000785   Thumb Code   364  bsp_nafe11388.o(i.NAFE_formatResultArray)
+    i.NAFE_init                              0x0800090c   Section        0  bsp_nafe11388.o(i.NAFE_init)
+    i.NAFE_mccrBlock                         0x08000af0   Section        0  bsp_nafe11388.o(i.NAFE_mccrBlock)
+    NAFE_mccrBlock                           0x08000af1   Thumb Code   304  bsp_nafe11388.o(i.NAFE_mccrBlock)
+    i.NAFE_mcmrBlock                         0x08000c20   Section        0  bsp_nafe11388.o(i.NAFE_mcmrBlock)
+    NAFE_mcmrBlock                           0x08000c21   Thumb Code   248  bsp_nafe11388.o(i.NAFE_mcmrBlock)
+    i.NAFE_mcsrBlock                         0x08000d18   Section        0  bsp_nafe11388.o(i.NAFE_mcsrBlock)
+    NAFE_mcsrBlock                           0x08000d19   Thumb Code   136  bsp_nafe11388.o(i.NAFE_mcsrBlock)
+    i.NAFE_readRegBlock                      0x08000da0   Section        0  bsp_nafe11388.o(i.NAFE_readRegBlock)
+    NAFE_readRegBlock                        0x08000da1   Thumb Code    40  bsp_nafe11388.o(i.NAFE_readRegBlock)
+    i.NAFE_resetDevice                       0x08000dc8   Section        0  bsp_nafe11388.o(i.NAFE_resetDevice)
+    NAFE_resetDevice                         0x08000dc9   Thumb Code    26  bsp_nafe11388.o(i.NAFE_resetDevice)
+    i.NAFE_sccrBlock                         0x08000de2   Section        0  bsp_nafe11388.o(i.NAFE_sccrBlock)
+    NAFE_sccrBlock                           0x08000de3   Thumb Code   144  bsp_nafe11388.o(i.NAFE_sccrBlock)
+    i.NAFE_scsrBlock                         0x08000e72   Section        0  bsp_nafe11388.o(i.NAFE_scsrBlock)
+    NAFE_scsrBlock                           0x08000e73   Thumb Code   130  bsp_nafe11388.o(i.NAFE_scsrBlock)
+    i.NAFE_sendCmdBlock                      0x08000ef4   Section        0  bsp_nafe11388.o(i.NAFE_sendCmdBlock)
+    NAFE_sendCmdBlock                        0x08000ef5   Thumb Code    30  bsp_nafe11388.o(i.NAFE_sendCmdBlock)
+    i.NAFE_setChannel                        0x08000f12   Section        0  bsp_nafe11388.o(i.NAFE_setChannel)
+    NAFE_setChannel                          0x08000f13   Thumb Code    22  bsp_nafe11388.o(i.NAFE_setChannel)
+    i.NAFE_startSample                       0x08000f28   Section        0  bsp_nafe11388.o(i.NAFE_startSample)
+    i.NAFE_terminateContiSample              0x08000ff4   Section        0  bsp_nafe11388.o(i.NAFE_terminateContiSample)
+    NAFE_terminateContiSample                0x08000ff5   Thumb Code    28  bsp_nafe11388.o(i.NAFE_terminateContiSample)
+    i.NAFE_triggerSample                     0x08001010   Section        0  bsp_nafe11388.o(i.NAFE_triggerSample)
+    NAFE_triggerSample                       0x08001011   Thumb Code   122  bsp_nafe11388.o(i.NAFE_triggerSample)
+    i.NAFE_writeRegBlock                     0x0800108a   Section        0  bsp_nafe11388.o(i.NAFE_writeRegBlock)
+    NAFE_writeRegBlock                       0x0800108b   Thumb Code    40  bsp_nafe11388.o(i.NAFE_writeRegBlock)
+    i.NMI_Handler                            0x080010b2   Section        0  at32f435_437_int.o(i.NMI_Handler)
+    i.PendSV_Handler                         0x080010b4   Section        0  at32f435_437_int.o(i.PendSV_Handler)
+    i.SVC_Handler                            0x080010b6   Section        0  at32f435_437_int.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x080010b8   Section        0  at32f435_437_int.o(i.SysTick_Handler)
+    i.SystemInit                             0x080010bc   Section        0  system_at32f435_437.o(i.SystemInit)
+    i.UsageFault_Handler                     0x0800114c   Section        0  at32f435_437_int.o(i.UsageFault_Handler)
+    i.__scatterload_copy                     0x08001150   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x0800115e   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08001160   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.bsp_spi_config                         0x08001170   Section        0  bsp_spi.o(i.bsp_spi_config)
+    i.bsp_spi_gpio_config                    0x08001368   Section        0  bsp_spi.o(i.bsp_spi_gpio_config)
+    bsp_spi_gpio_config                      0x08001369   Thumb Code   140  bsp_spi.o(i.bsp_spi_gpio_config)
+    i.bsp_spi_received_byte                  0x080013fc   Section        0  bsp_spi.o(i.bsp_spi_received_byte)
+    i.bsp_spi_received_done                  0x08001410   Section        0  bsp_spi.o(i.bsp_spi_received_done)
+    i.bsp_spi_received_halfword              0x08001428   Section        0  bsp_spi.o(i.bsp_spi_received_halfword)
+    i.bsp_spi_set_cs                         0x080014b4   Section        0  bsp_spi.o(i.bsp_spi_set_cs)
+    i.bsp_spi_transmit_byte                  0x080014d8   Section        0  bsp_spi.o(i.bsp_spi_transmit_byte)
+    i.bsp_spi_transmit_done                  0x080014e8   Section        0  bsp_spi.o(i.bsp_spi_transmit_done)
+    i.bsp_spi_transmit_halfword              0x08001500   Section        0  bsp_spi.o(i.bsp_spi_transmit_halfword)
+    i.crm_ahb_div_set                        0x08001580   Section        0  at32f435_437_crm.o(i.crm_ahb_div_set)
+    i.crm_apb1_div_set                       0x08001594   Section        0  at32f435_437_crm.o(i.crm_apb1_div_set)
+    i.crm_apb2_div_set                       0x080015a8   Section        0  at32f435_437_crm.o(i.crm_apb2_div_set)
+    i.crm_auto_step_mode_enable              0x080015bc   Section        0  at32f435_437_crm.o(i.crm_auto_step_mode_enable)
+    i.crm_clock_source_enable                0x080015e4   Section        0  at32f435_437_crm.o(i.crm_clock_source_enable)
+    i.crm_flag_get                           0x0800164c   Section        0  at32f435_437_crm.o(i.crm_flag_get)
+    i.crm_hext_stable_wait                   0x0800167c   Section        0  at32f435_437_crm.o(i.crm_hext_stable_wait)
+    i.crm_periph_clock_enable                0x080016ac   Section        0  at32f435_437_crm.o(i.crm_periph_clock_enable)
+    i.crm_pll_config                         0x080016f8   Section        0  at32f435_437_crm.o(i.crm_pll_config)
+    i.crm_reset                              0x08001740   Section        0  at32f435_437_crm.o(i.crm_reset)
+    i.crm_sysclk_switch                      0x080017b8   Section        0  at32f435_437_crm.o(i.crm_sysclk_switch)
+    i.crm_sysclk_switch_status_get           0x080017f4   Section        0  at32f435_437_crm.o(i.crm_sysclk_switch_status_get)
+    i.gpio_bits_reset                        0x08001804   Section        0  at32f435_437_gpio.o(i.gpio_bits_reset)
+    i.gpio_bits_set                          0x08001808   Section        0  at32f435_437_gpio.o(i.gpio_bits_set)
+    i.gpio_default_para_init                 0x0800180c   Section        0  at32f435_437_gpio.o(i.gpio_default_para_init)
+    i.gpio_init                              0x08001820   Section        0  at32f435_437_gpio.o(i.gpio_init)
+    i.gpio_pin_mux_config                    0x0800189a   Section        0  at32f435_437_gpio.o(i.gpio_pin_mux_config)
+    i.main                                   0x080018dc   Section        0  main.o(i.main)
+    i.nafe11388_init                         0x0800190c   Section        0  nafe11388_if.o(i.nafe11388_init)
+    i.nafe11388_startSample                  0x08001938   Section        0  nafe11388_if.o(i.nafe11388_startSample)
+    i.nafe1138_gpio_config                   0x080019a8   Section        0  nafe11388_if.o(i.nafe1138_gpio_config)
+    nafe1138_gpio_config                     0x080019a9   Thumb Code   114  nafe11388_if.o(i.nafe1138_gpio_config)
+    i.spi_default_para_init                  0x08001a24   Section        0  at32f435_437_spi.o(i.spi_default_para_init)
+    i.spi_enable                             0x08001a3a   Section        0  at32f435_437_spi.o(i.spi_enable)
+    i.spi_i2s_data_receive                   0x08001a44   Section        0  at32f435_437_spi.o(i.spi_i2s_data_receive)
+    i.spi_i2s_data_transmit                  0x08001a4c   Section        0  at32f435_437_spi.o(i.spi_i2s_data_transmit)
+    i.spi_i2s_flag_get                       0x08001a50   Section        0  at32f435_437_spi.o(i.spi_i2s_flag_get)
+    i.spi_init                               0x08001a60   Section        0  at32f435_437_spi.o(i.spi_init)
+    i.system_clock_config                    0x08001bb8   Section        0  at32f435_437_clock.o(i.system_clock_config)
+    i.system_core_clock_update               0x08001c54   Section        0  system_at32f435_437.o(i.system_core_clock_update)
+    .constdata                               0x08001d48   Section       22  system_at32f435_437.o(.constdata)
+    sys_ahb_div_table                        0x08001d48   Data          16  system_at32f435_437.o(.constdata)
+    pll_fr_table                             0x08001d58   Data           6  system_at32f435_437.o(.constdata)
     .data                                    0x20000000   Section        4  system_at32f435_437.o(.data)
-    STACK                                    0x20000008   Section     1024  startup_at32f435_437.o(STACK)
+    .data                                    0x20000008   Section      296  nafe11388_if.o(.data)
+    gs_SysConfig                             0x20000008   Data           6  nafe11388_if.o(.data)
+    gs_ChnConfig                             0x20000010   Data         224  nafe11388_if.o(.data)
+    nafe_dev                                 0x200000f0   Data          20  nafe11388_if.o(.data)
+    gs_Result                                0x20000108   Data           8  nafe11388_if.o(.data)
+    gs_XferHdl                               0x20000110   Data          32  nafe11388_if.o(.data)
+    .data                                    0x20000130   Section        8  bsp_spi.o(.data)
+    transmit_callback_func                   0x20000130   Data           4  bsp_spi.o(.data)
+    received_callback_func                   0x20000134   Data           4  bsp_spi.o(.data)
+    STACK                                    0x20000138   Section     1024  startup_at32f435_437.o(STACK)
 
     Global Symbols
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
-    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
     __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
     __cpp_initialize__aeabi_                  - Undefined Weak Reference
     __cxa_finalize                            - Undefined Weak Reference
-    __decompress                              - Undefined Weak Reference
     _clock_init                               - Undefined Weak Reference
     _microlib_exit                            - Undefined Weak Reference
     __Vectors_Size                           0x0000020c   Number         0  startup_at32f435_437.o ABSOLUTE
@@ -1260,44 +1449,86 @@ Image Symbol Table
     WWDT_IRQHandler                          0x0800023b   Thumb Code     0  startup_at32f435_437.o(.text)
     XMC_IRQHandler                           0x0800023b   Thumb Code     0  startup_at32f435_437.o(.text)
     __aeabi_uldivmod                         0x08000245   Thumb Code    98  uldiv.o(.text)
-    __aeabi_llsl                             0x080002a7   Thumb Code    30  llshl.o(.text)
-    _ll_shift_l                              0x080002a7   Thumb Code     0  llshl.o(.text)
-    __aeabi_llsr                             0x080002c5   Thumb Code    32  llushr.o(.text)
-    _ll_ushift_r                             0x080002c5   Thumb Code     0  llushr.o(.text)
-    __scatterload                            0x080002e5   Thumb Code    28  init.o(.text)
-    __scatterload_rt2                        0x080002e5   Thumb Code     0  init.o(.text)
-    BusFault_Handler                         0x08000309   Thumb Code     4  at32f435_437_int.o(i.BusFault_Handler)
-    DebugMon_Handler                         0x0800030d   Thumb Code     2  at32f435_437_int.o(i.DebugMon_Handler)
-    HardFault_Handler                        0x0800030f   Thumb Code     4  at32f435_437_int.o(i.HardFault_Handler)
-    MemManage_Handler                        0x08000313   Thumb Code     4  at32f435_437_int.o(i.MemManage_Handler)
-    NMI_Handler                              0x08000317   Thumb Code     2  at32f435_437_int.o(i.NMI_Handler)
-    PendSV_Handler                           0x08000319   Thumb Code     2  at32f435_437_int.o(i.PendSV_Handler)
-    SVC_Handler                              0x0800031b   Thumb Code     2  at32f435_437_int.o(i.SVC_Handler)
-    SysTick_Handler                          0x0800031d   Thumb Code     2  at32f435_437_int.o(i.SysTick_Handler)
-    SystemInit                               0x08000321   Thumb Code   128  system_at32f435_437.o(i.SystemInit)
-    UsageFault_Handler                       0x080003b1   Thumb Code     4  at32f435_437_int.o(i.UsageFault_Handler)
-    __scatterload_copy                       0x080003b5   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x080003c3   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x080003c5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    crm_ahb_div_set                          0x080003d5   Thumb Code    14  at32f435_437_crm.o(i.crm_ahb_div_set)
-    crm_apb1_div_set                         0x080003e9   Thumb Code    14  at32f435_437_crm.o(i.crm_apb1_div_set)
-    crm_apb2_div_set                         0x080003fd   Thumb Code    14  at32f435_437_crm.o(i.crm_apb2_div_set)
-    crm_auto_step_mode_enable                0x08000411   Thumb Code    34  at32f435_437_crm.o(i.crm_auto_step_mode_enable)
-    crm_clock_source_enable                  0x08000439   Thumb Code    98  at32f435_437_crm.o(i.crm_clock_source_enable)
-    crm_flag_get                             0x080004a1   Thumb Code    44  at32f435_437_crm.o(i.crm_flag_get)
-    crm_hext_stable_wait                     0x080004d1   Thumb Code    46  at32f435_437_crm.o(i.crm_hext_stable_wait)
-    crm_periph_clock_enable                  0x08000501   Thumb Code    70  at32f435_437_crm.o(i.crm_periph_clock_enable)
-    crm_pll_config                           0x0800054d   Thumb Code    68  at32f435_437_crm.o(i.crm_pll_config)
-    crm_reset                                0x08000595   Thumb Code   106  at32f435_437_crm.o(i.crm_reset)
-    crm_sysclk_switch                        0x0800060d   Thumb Code    54  at32f435_437_crm.o(i.crm_sysclk_switch)
-    crm_sysclk_switch_status_get             0x08000649   Thumb Code    10  at32f435_437_crm.o(i.crm_sysclk_switch_status_get)
-    main                                     0x08000659   Thumb Code     8  main.o(i.main)
-    system_clock_config                      0x08000661   Thumb Code   144  at32f435_437_clock.o(i.system_clock_config)
-    system_core_clock_update                 0x080006fd   Thumb Code   214  system_at32f435_437.o(i.system_core_clock_update)
-    Region$$Table$$Base                      0x08000804   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08000824   Number         0  anon$$obj.o(Region$$Table)
+    __aeabi_memset                           0x080002a7   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x080002a7   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x080002a7   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x080002b5   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x080002b5   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x080002b5   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x080002b9   Thumb Code    18  memseta.o(.text)
+    __aeabi_dmul                             0x080002cb   Thumb Code   228  dmul.o(.text)
+    __aeabi_ddiv                             0x080003af   Thumb Code   222  ddiv.o(.text)
+    __aeabi_i2d                              0x0800048d   Thumb Code    34  dflti.o(.text)
+    __aeabi_f2d                              0x080004af   Thumb Code    38  f2d.o(.text)
+    __aeabi_llsl                             0x080004d5   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x080004d5   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x080004f3   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x080004f3   Thumb Code     0  llushr.o(.text)
+    __I$use$fp                               0x08000513   Thumb Code     0  iusefp.o(.text)
+    _double_round                            0x08000513   Thumb Code    30  depilogue.o(.text)
+    _double_epilogue                         0x08000531   Thumb Code   156  depilogue.o(.text)
+    __scatterload                            0x080005cd   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x080005cd   Thumb Code     0  init.o(.text)
+    __decompress                             0x080005f1   Thumb Code     0  __dczerorl2.o(.text)
+    __decompress1                            0x080005f1   Thumb Code    86  __dczerorl2.o(.text)
+    BusFault_Handler                         0x08000647   Thumb Code     4  at32f435_437_int.o(i.BusFault_Handler)
+    DebugMon_Handler                         0x0800064b   Thumb Code     2  at32f435_437_int.o(i.DebugMon_Handler)
+    HardFault_Handler                        0x0800064d   Thumb Code     4  at32f435_437_int.o(i.HardFault_Handler)
+    MemManage_Handler                        0x08000651   Thumb Code     4  at32f435_437_int.o(i.MemManage_Handler)
+    NAFE_HAL_readRegBlock                    0x0800068b   Thumb Code    86  bsp_nafe11388.o(i.NAFE_HAL_readRegBlock)
+    NAFE_HAL_sendCmdBlock                    0x080006e1   Thumb Code    38  bsp_nafe11388.o(i.NAFE_HAL_sendCmdBlock)
+    NAFE_HAL_writeRegBlock                   0x08000707   Thumb Code    78  bsp_nafe11388.o(i.NAFE_HAL_writeRegBlock)
+    NAFE_init                                0x0800090d   Thumb Code   484  bsp_nafe11388.o(i.NAFE_init)
+    NAFE_startSample                         0x08000f29   Thumb Code   204  bsp_nafe11388.o(i.NAFE_startSample)
+    NMI_Handler                              0x080010b3   Thumb Code     2  at32f435_437_int.o(i.NMI_Handler)
+    PendSV_Handler                           0x080010b5   Thumb Code     2  at32f435_437_int.o(i.PendSV_Handler)
+    SVC_Handler                              0x080010b7   Thumb Code     2  at32f435_437_int.o(i.SVC_Handler)
+    SysTick_Handler                          0x080010b9   Thumb Code     2  at32f435_437_int.o(i.SysTick_Handler)
+    SystemInit                               0x080010bd   Thumb Code   128  system_at32f435_437.o(i.SystemInit)
+    UsageFault_Handler                       0x0800114d   Thumb Code     4  at32f435_437_int.o(i.UsageFault_Handler)
+    __scatterload_copy                       0x08001151   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x0800115f   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08001161   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    bsp_spi_config                           0x08001171   Thumb Code   478  bsp_spi.o(i.bsp_spi_config)
+    bsp_spi_received_byte                    0x080013fd   Thumb Code    18  bsp_spi.o(i.bsp_spi_received_byte)
+    bsp_spi_received_done                    0x08001411   Thumb Code    20  bsp_spi.o(i.bsp_spi_received_done)
+    bsp_spi_received_halfword                0x08001429   Thumb Code   124  bsp_spi.o(i.bsp_spi_received_halfword)
+    bsp_spi_set_cs                           0x080014b5   Thumb Code    30  bsp_spi.o(i.bsp_spi_set_cs)
+    bsp_spi_transmit_byte                    0x080014d9   Thumb Code    16  bsp_spi.o(i.bsp_spi_transmit_byte)
+    bsp_spi_transmit_done                    0x080014e9   Thumb Code    20  bsp_spi.o(i.bsp_spi_transmit_done)
+    bsp_spi_transmit_halfword                0x08001501   Thumb Code   122  bsp_spi.o(i.bsp_spi_transmit_halfword)
+    crm_ahb_div_set                          0x08001581   Thumb Code    14  at32f435_437_crm.o(i.crm_ahb_div_set)
+    crm_apb1_div_set                         0x08001595   Thumb Code    14  at32f435_437_crm.o(i.crm_apb1_div_set)
+    crm_apb2_div_set                         0x080015a9   Thumb Code    14  at32f435_437_crm.o(i.crm_apb2_div_set)
+    crm_auto_step_mode_enable                0x080015bd   Thumb Code    34  at32f435_437_crm.o(i.crm_auto_step_mode_enable)
+    crm_clock_source_enable                  0x080015e5   Thumb Code    98  at32f435_437_crm.o(i.crm_clock_source_enable)
+    crm_flag_get                             0x0800164d   Thumb Code    44  at32f435_437_crm.o(i.crm_flag_get)
+    crm_hext_stable_wait                     0x0800167d   Thumb Code    46  at32f435_437_crm.o(i.crm_hext_stable_wait)
+    crm_periph_clock_enable                  0x080016ad   Thumb Code    70  at32f435_437_crm.o(i.crm_periph_clock_enable)
+    crm_pll_config                           0x080016f9   Thumb Code    68  at32f435_437_crm.o(i.crm_pll_config)
+    crm_reset                                0x08001741   Thumb Code   106  at32f435_437_crm.o(i.crm_reset)
+    crm_sysclk_switch                        0x080017b9   Thumb Code    54  at32f435_437_crm.o(i.crm_sysclk_switch)
+    crm_sysclk_switch_status_get             0x080017f5   Thumb Code    10  at32f435_437_crm.o(i.crm_sysclk_switch_status_get)
+    gpio_bits_reset                          0x08001805   Thumb Code     4  at32f435_437_gpio.o(i.gpio_bits_reset)
+    gpio_bits_set                            0x08001809   Thumb Code     4  at32f435_437_gpio.o(i.gpio_bits_set)
+    gpio_default_para_init                   0x0800180d   Thumb Code    20  at32f435_437_gpio.o(i.gpio_default_para_init)
+    gpio_init                                0x08001821   Thumb Code   122  at32f435_437_gpio.o(i.gpio_init)
+    gpio_pin_mux_config                      0x0800189b   Thumb Code    66  at32f435_437_gpio.o(i.gpio_pin_mux_config)
+    main                                     0x080018dd   Thumb Code    48  main.o(i.main)
+    nafe11388_init                           0x0800190d   Thumb Code    36  nafe11388_if.o(i.nafe11388_init)
+    nafe11388_startSample                    0x08001939   Thumb Code   102  nafe11388_if.o(i.nafe11388_startSample)
+    spi_default_para_init                    0x08001a25   Thumb Code    22  at32f435_437_spi.o(i.spi_default_para_init)
+    spi_enable                               0x08001a3b   Thumb Code    10  at32f435_437_spi.o(i.spi_enable)
+    spi_i2s_data_receive                     0x08001a45   Thumb Code     8  at32f435_437_spi.o(i.spi_i2s_data_receive)
+    spi_i2s_data_transmit                    0x08001a4d   Thumb Code     4  at32f435_437_spi.o(i.spi_i2s_data_transmit)
+    spi_i2s_flag_get                         0x08001a51   Thumb Code    16  at32f435_437_spi.o(i.spi_i2s_flag_get)
+    spi_init                                 0x08001a61   Thumb Code   344  at32f435_437_spi.o(i.spi_init)
+    system_clock_config                      0x08001bb9   Thumb Code   144  at32f435_437_clock.o(i.system_clock_config)
+    system_core_clock_update                 0x08001c55   Thumb Code   214  system_at32f435_437.o(i.system_core_clock_update)
+    Region$$Table$$Base                      0x08001d60   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001d80   Number         0  anon$$obj.o(Region$$Table)
     system_core_clock                        0x20000000   Data           4  system_at32f435_437.o(.data)
-    __initial_sp                             0x20000408   Data           0  startup_at32f435_437.o(STACK)
+    __initial_sp                             0x20000538   Data           0  startup_at32f435_437.o(STACK)
 
 
 
@@ -1307,70 +1538,126 @@ Memory Map of the image
 
   Image Entry point : 0x0800020d
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000828, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001eb8, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x00001dd0])
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000824, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001d80, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x0000020c   Data   RO         4911    RESET               startup_at32f435_437.o
-    0x0800020c   0x0800020c   0x00000000   Code   RO         4940  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x0800020c   0x0800020c   0x00000004   Code   RO         4945    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08000210   0x08000210   0x00000004   Code   RO         4948    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4950    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4952    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000214   0x08000214   0x00000008   Code   RO         4953    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x0800021c   0x0800021c   0x00000000   Code   RO         4955    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x0800021c   0x0800021c   0x00000000   Code   RO         4957    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x0800021c   0x0800021c   0x00000004   Code   RO         4946    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x0800020c   0x0800020c   0x00000000   Code   RO         5206  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x0800020c   0x0800020c   0x00000004   Code   RO         5221    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000210   0x08000210   0x00000004   Code   RO         5224    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         5226    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         5228    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000214   0x08000214   0x00000008   Code   RO         5229    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x0800021c   0x0800021c   0x00000000   Code   RO         5231    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x0800021c   0x0800021c   0x00000000   Code   RO         5233    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x0800021c   0x0800021c   0x00000004   Code   RO         5222    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x08000220   0x08000220   0x00000024   Code   RO         4912    .text               startup_at32f435_437.o
-    0x08000244   0x08000244   0x00000062   Code   RO         4943    .text               mc_w.l(uldiv.o)
-    0x080002a6   0x080002a6   0x0000001e   Code   RO         4959    .text               mc_w.l(llshl.o)
-    0x080002c4   0x080002c4   0x00000020   Code   RO         4961    .text               mc_w.l(llushr.o)
-    0x080002e4   0x080002e4   0x00000024   Code   RO         4963    .text               mc_w.l(init.o)
-    0x08000308   0x08000308   0x00000004   Code   RO         4800    i.BusFault_Handler  at32f435_437_int.o
-    0x0800030c   0x0800030c   0x00000002   Code   RO         4801    i.DebugMon_Handler  at32f435_437_int.o
-    0x0800030e   0x0800030e   0x00000004   Code   RO         4802    i.HardFault_Handler  at32f435_437_int.o
-    0x08000312   0x08000312   0x00000004   Code   RO         4803    i.MemManage_Handler  at32f435_437_int.o
-    0x08000316   0x08000316   0x00000002   Code   RO         4804    i.NMI_Handler       at32f435_437_int.o
-    0x08000318   0x08000318   0x00000002   Code   RO         4805    i.PendSV_Handler    at32f435_437_int.o
-    0x0800031a   0x0800031a   0x00000002   Code   RO         4806    i.SVC_Handler       at32f435_437_int.o
-    0x0800031c   0x0800031c   0x00000002   Code   RO         4807    i.SysTick_Handler   at32f435_437_int.o
-    0x0800031e   0x0800031e   0x00000002   PAD
-    0x08000320   0x08000320   0x00000090   Code   RO         4875    i.SystemInit        system_at32f435_437.o
-    0x080003b0   0x080003b0   0x00000004   Code   RO         4808    i.UsageFault_Handler  at32f435_437_int.o
-    0x080003b4   0x080003b4   0x0000000e   Code   RO         4967    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080003c2   0x080003c2   0x00000002   Code   RO         4968    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080003c4   0x080003c4   0x0000000e   Code   RO         4969    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x080003d2   0x080003d2   0x00000002   PAD
-    0x080003d4   0x080003d4   0x00000014   Code   RO          795    i.crm_ahb_div_set   at32f435_437_crm.o
-    0x080003e8   0x080003e8   0x00000014   Code   RO          796    i.crm_apb1_div_set  at32f435_437_crm.o
-    0x080003fc   0x080003fc   0x00000014   Code   RO          797    i.crm_apb2_div_set  at32f435_437_crm.o
-    0x08000410   0x08000410   0x00000028   Code   RO          798    i.crm_auto_step_mode_enable  at32f435_437_crm.o
-    0x08000438   0x08000438   0x00000068   Code   RO          805    i.crm_clock_source_enable  at32f435_437_crm.o
-    0x080004a0   0x080004a0   0x00000030   Code   RO          811    i.crm_flag_get      at32f435_437_crm.o
-    0x080004d0   0x080004d0   0x0000002e   Code   RO          813    i.crm_hext_stable_wait  at32f435_437_crm.o
-    0x080004fe   0x080004fe   0x00000002   PAD
-    0x08000500   0x08000500   0x0000004c   Code   RO          821    i.crm_periph_clock_enable  at32f435_437_crm.o
-    0x0800054c   0x0800054c   0x00000048   Code   RO          824    i.crm_pll_config    at32f435_437_crm.o
-    0x08000594   0x08000594   0x00000078   Code   RO          826    i.crm_reset         at32f435_437_crm.o
-    0x0800060c   0x0800060c   0x0000003c   Code   RO          827    i.crm_sysclk_switch  at32f435_437_crm.o
-    0x08000648   0x08000648   0x00000010   Code   RO          828    i.crm_sysclk_switch_status_get  at32f435_437_crm.o
-    0x08000658   0x08000658   0x00000008   Code   RO         4919    i.main              main.o
-    0x08000660   0x08000660   0x0000009c   Code   RO         4773    i.system_clock_config  at32f435_437_clock.o
-    0x080006fc   0x080006fc   0x000000f0   Code   RO         4876    i.system_core_clock_update  system_at32f435_437.o
-    0x080007ec   0x080007ec   0x00000016   Data   RO         4877    .constdata          system_at32f435_437.o
-    0x08000802   0x08000802   0x00000002   PAD
-    0x08000804   0x08000804   0x00000020   Data   RO         4965    Region$$Table       anon$$obj.o
+    0x08000244   0x08000244   0x00000062   Code   RO         5209    .text               mc_w.l(uldiv.o)
+    0x080002a6   0x080002a6   0x00000024   Code   RO         5211    .text               mc_w.l(memseta.o)
+    0x080002ca   0x080002ca   0x000000e4   Code   RO         5213    .text               mf_w.l(dmul.o)
+    0x080003ae   0x080003ae   0x000000de   Code   RO         5215    .text               mf_w.l(ddiv.o)
+    0x0800048c   0x0800048c   0x00000022   Code   RO         5217    .text               mf_w.l(dflti.o)
+    0x080004ae   0x080004ae   0x00000026   Code   RO         5219    .text               mf_w.l(f2d.o)
+    0x080004d4   0x080004d4   0x0000001e   Code   RO         5235    .text               mc_w.l(llshl.o)
+    0x080004f2   0x080004f2   0x00000020   Code   RO         5237    .text               mc_w.l(llushr.o)
+    0x08000512   0x08000512   0x00000000   Code   RO         5239    .text               mc_w.l(iusefp.o)
+    0x08000512   0x08000512   0x000000ba   Code   RO         5240    .text               mf_w.l(depilogue.o)
+    0x080005cc   0x080005cc   0x00000024   Code   RO         5242    .text               mc_w.l(init.o)
+    0x080005f0   0x080005f0   0x00000056   Code   RO         5252    .text               mc_w.l(__dczerorl2.o)
+    0x08000646   0x08000646   0x00000004   Code   RO         4800    i.BusFault_Handler  at32f435_437_int.o
+    0x0800064a   0x0800064a   0x00000002   Code   RO         4801    i.DebugMon_Handler  at32f435_437_int.o
+    0x0800064c   0x0800064c   0x00000004   Code   RO         4802    i.HardFault_Handler  at32f435_437_int.o
+    0x08000650   0x08000650   0x00000004   Code   RO         4803    i.MemManage_Handler  at32f435_437_int.o
+    0x08000654   0x08000654   0x00000036   Code   RO         5077    i.NAFE_HAL_delay    bsp_nafe11388.o
+    0x0800068a   0x0800068a   0x00000056   Code   RO         5078    i.NAFE_HAL_readRegBlock  bsp_nafe11388.o
+    0x080006e0   0x080006e0   0x00000026   Code   RO         5079    i.NAFE_HAL_sendCmdBlock  bsp_nafe11388.o
+    0x08000706   0x08000706   0x0000004e   Code   RO         5080    i.NAFE_HAL_writeRegBlock  bsp_nafe11388.o
+    0x08000754   0x08000754   0x0000001c   Code   RO         5081    i.NAFE_combCmdForAccessRegs  bsp_nafe11388.o
+    0x08000770   0x08000770   0x00000012   Code   RO         5082    i.NAFE_combCmdForInstructionCmds  bsp_nafe11388.o
+    0x08000782   0x08000782   0x00000002   PAD
+    0x08000784   0x08000784   0x00000188   Code   RO         5083    i.NAFE_formatResultArray  bsp_nafe11388.o
+    0x0800090c   0x0800090c   0x000001e4   Code   RO         5084    i.NAFE_init         bsp_nafe11388.o
+    0x08000af0   0x08000af0   0x00000130   Code   RO         5085    i.NAFE_mccrBlock    bsp_nafe11388.o
+    0x08000c20   0x08000c20   0x000000f8   Code   RO         5086    i.NAFE_mcmrBlock    bsp_nafe11388.o
+    0x08000d18   0x08000d18   0x00000088   Code   RO         5087    i.NAFE_mcsrBlock    bsp_nafe11388.o
+    0x08000da0   0x08000da0   0x00000028   Code   RO         5088    i.NAFE_readRegBlock  bsp_nafe11388.o
+    0x08000dc8   0x08000dc8   0x0000001a   Code   RO         5089    i.NAFE_resetDevice  bsp_nafe11388.o
+    0x08000de2   0x08000de2   0x00000090   Code   RO         5090    i.NAFE_sccrBlock    bsp_nafe11388.o
+    0x08000e72   0x08000e72   0x00000082   Code   RO         5091    i.NAFE_scsrBlock    bsp_nafe11388.o
+    0x08000ef4   0x08000ef4   0x0000001e   Code   RO         5092    i.NAFE_sendCmdBlock  bsp_nafe11388.o
+    0x08000f12   0x08000f12   0x00000016   Code   RO         5093    i.NAFE_setChannel   bsp_nafe11388.o
+    0x08000f28   0x08000f28   0x000000cc   Code   RO         5094    i.NAFE_startSample  bsp_nafe11388.o
+    0x08000ff4   0x08000ff4   0x0000001c   Code   RO         5095    i.NAFE_terminateContiSample  bsp_nafe11388.o
+    0x08001010   0x08001010   0x0000007a   Code   RO         5096    i.NAFE_triggerSample  bsp_nafe11388.o
+    0x0800108a   0x0800108a   0x00000028   Code   RO         5097    i.NAFE_writeRegBlock  bsp_nafe11388.o
+    0x080010b2   0x080010b2   0x00000002   Code   RO         4804    i.NMI_Handler       at32f435_437_int.o
+    0x080010b4   0x080010b4   0x00000002   Code   RO         4805    i.PendSV_Handler    at32f435_437_int.o
+    0x080010b6   0x080010b6   0x00000002   Code   RO         4806    i.SVC_Handler       at32f435_437_int.o
+    0x080010b8   0x080010b8   0x00000002   Code   RO         4807    i.SysTick_Handler   at32f435_437_int.o
+    0x080010ba   0x080010ba   0x00000002   PAD
+    0x080010bc   0x080010bc   0x00000090   Code   RO         4875    i.SystemInit        system_at32f435_437.o
+    0x0800114c   0x0800114c   0x00000004   Code   RO         4808    i.UsageFault_Handler  at32f435_437_int.o
+    0x08001150   0x08001150   0x0000000e   Code   RO         5246    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0800115e   0x0800115e   0x00000002   Code   RO         5247    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08001160   0x08001160   0x0000000e   Code   RO         5248    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x0800116e   0x0800116e   0x00000002   PAD
+    0x08001170   0x08001170   0x000001f8   Code   RO         4996    i.bsp_spi_config    bsp_spi.o
+    0x08001368   0x08001368   0x00000094   Code   RO         4997    i.bsp_spi_gpio_config  bsp_spi.o
+    0x080013fc   0x080013fc   0x00000012   Code   RO         4998    i.bsp_spi_received_byte  bsp_spi.o
+    0x0800140e   0x0800140e   0x00000002   PAD
+    0x08001410   0x08001410   0x00000018   Code   RO         4999    i.bsp_spi_received_done  bsp_spi.o
+    0x08001428   0x08001428   0x0000008c   Code   RO         5000    i.bsp_spi_received_halfword  bsp_spi.o
+    0x080014b4   0x080014b4   0x00000024   Code   RO         5001    i.bsp_spi_set_cs    bsp_spi.o
+    0x080014d8   0x080014d8   0x00000010   Code   RO         5002    i.bsp_spi_transmit_byte  bsp_spi.o
+    0x080014e8   0x080014e8   0x00000018   Code   RO         5003    i.bsp_spi_transmit_done  bsp_spi.o
+    0x08001500   0x08001500   0x00000080   Code   RO         5004    i.bsp_spi_transmit_halfword  bsp_spi.o
+    0x08001580   0x08001580   0x00000014   Code   RO          795    i.crm_ahb_div_set   at32f435_437_crm.o
+    0x08001594   0x08001594   0x00000014   Code   RO          796    i.crm_apb1_div_set  at32f435_437_crm.o
+    0x080015a8   0x080015a8   0x00000014   Code   RO          797    i.crm_apb2_div_set  at32f435_437_crm.o
+    0x080015bc   0x080015bc   0x00000028   Code   RO          798    i.crm_auto_step_mode_enable  at32f435_437_crm.o
+    0x080015e4   0x080015e4   0x00000068   Code   RO          805    i.crm_clock_source_enable  at32f435_437_crm.o
+    0x0800164c   0x0800164c   0x00000030   Code   RO          811    i.crm_flag_get      at32f435_437_crm.o
+    0x0800167c   0x0800167c   0x0000002e   Code   RO          813    i.crm_hext_stable_wait  at32f435_437_crm.o
+    0x080016aa   0x080016aa   0x00000002   PAD
+    0x080016ac   0x080016ac   0x0000004c   Code   RO          821    i.crm_periph_clock_enable  at32f435_437_crm.o
+    0x080016f8   0x080016f8   0x00000048   Code   RO          824    i.crm_pll_config    at32f435_437_crm.o
+    0x08001740   0x08001740   0x00000078   Code   RO          826    i.crm_reset         at32f435_437_crm.o
+    0x080017b8   0x080017b8   0x0000003c   Code   RO          827    i.crm_sysclk_switch  at32f435_437_crm.o
+    0x080017f4   0x080017f4   0x00000010   Code   RO          828    i.crm_sysclk_switch_status_get  at32f435_437_crm.o
+    0x08001804   0x08001804   0x00000004   Code   RO         2477    i.gpio_bits_reset   at32f435_437_gpio.o
+    0x08001808   0x08001808   0x00000004   Code   RO         2478    i.gpio_bits_set     at32f435_437_gpio.o
+    0x0800180c   0x0800180c   0x00000014   Code   RO         2480    i.gpio_default_para_init  at32f435_437_gpio.o
+    0x08001820   0x08001820   0x0000007a   Code   RO         2481    i.gpio_init         at32f435_437_gpio.o
+    0x0800189a   0x0800189a   0x00000042   Code   RO         2486    i.gpio_pin_mux_config  at32f435_437_gpio.o
+    0x080018dc   0x080018dc   0x00000030   Code   RO         4919    i.main              main.o
+    0x0800190c   0x0800190c   0x0000002c   Code   RO         4949    i.nafe11388_init    nafe11388_if.o
+    0x08001938   0x08001938   0x00000070   Code   RO         4950    i.nafe11388_startSample  nafe11388_if.o
+    0x080019a8   0x080019a8   0x0000007c   Code   RO         4951    i.nafe1138_gpio_config  nafe11388_if.o
+    0x08001a24   0x08001a24   0x00000016   Code   RO         3401    i.spi_default_para_init  at32f435_437_spi.o
+    0x08001a3a   0x08001a3a   0x0000000a   Code   RO         3402    i.spi_enable        at32f435_437_spi.o
+    0x08001a44   0x08001a44   0x00000008   Code   RO         3406    i.spi_i2s_data_receive  at32f435_437_spi.o
+    0x08001a4c   0x08001a4c   0x00000004   Code   RO         3407    i.spi_i2s_data_transmit  at32f435_437_spi.o
+    0x08001a50   0x08001a50   0x00000010   Code   RO         3411    i.spi_i2s_flag_get  at32f435_437_spi.o
+    0x08001a60   0x08001a60   0x00000158   Code   RO         3415    i.spi_init          at32f435_437_spi.o
+    0x08001bb8   0x08001bb8   0x0000009c   Code   RO         4773    i.system_clock_config  at32f435_437_clock.o
+    0x08001c54   0x08001c54   0x000000f4   Code   RO         4876    i.system_core_clock_update  system_at32f435_437.o
+    0x08001d48   0x08001d48   0x00000016   Data   RO         4877    .constdata          system_at32f435_437.o
+    0x08001d5e   0x08001d5e   0x00000002   PAD
+    0x08001d60   0x08001d60   0x00000020   Data   RO         5244    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000824, Size: 0x00000408, Max: 0x00060000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08001d80, Size: 0x00000538, Max: 0x00060000, ABSOLUTE, COMPRESSED[0x00000050])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08000824   0x00000004   Data   RW         4878    .data               system_at32f435_437.o
-    0x20000004   0x08000828   0x00000004   PAD
-    0x20000008        -       0x00000400   Zero   RW         4909    STACK               startup_at32f435_437.o
+    0x20000000   COMPRESSED   0x00000004   Data   RW         4878    .data               system_at32f435_437.o
+    0x20000004   COMPRESSED   0x00000004   PAD
+    0x20000008   COMPRESSED   0x00000128   Data   RW         4952    .data               nafe11388_if.o
+    0x20000130   COMPRESSED   0x00000008   Data   RW         5005    .data               bsp_spi.o
+    0x20000138        -       0x00000400   Zero   RW         4909    STACK               startup_at32f435_437.o
 
 
 ==============================================================================
@@ -1380,23 +1667,29 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-         0          0          0          0          0      33540   at32f435_437_acc.o
+         0          0          0          0          0      44112   at32f435_437_acc.o
        156         12          0          0          0        606   at32f435_437_clock.o
        642         76          0          0          0       6902   at32f435_437_crm.o
+       216          0          0          0          0       3473   at32f435_437_gpio.o
         26          0          0          0          0       4394   at32f435_437_int.o
-         8          0          0          0          0        459   main.o
+       404          0          0          0          0       3970   at32f435_437_spi.o
+      2652         48          0          0          0      16536   bsp_nafe11388.o
+      1038         82          0          8          0       6082   bsp_spi.o
+        48          0          0          0          0       3447   main.o
+       280         34          0        296          0      11217   nafe11388_if.o
         36          8        524          0       1024        900   startup_at32f435_437.o
-       384         42         22          4          0       2160   system_at32f435_437.o
+       388         46         22          4          0       2160   system_at32f435_437.o
 
     ----------------------------------------------------------------------
-      1256        138        580          4       1028      48961   Object Totals
+      5894        306        580        312       1024     103799   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         4          0          2          0          4          0   (incl. Padding)
+         8          0          2          4          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
 
+        86          0          0          0          0          0   __dczerorl2.o
          0          0          0          0          0          0   entry.o
          0          0          0          0          0          0   entry10a.o
          0          0          0          0          0          0   entry11a.o
@@ -1407,22 +1700,30 @@ Image component sizes
          8          4          0          0          0          0   entry9a.o
         30          0          0          0          0          0   handlers.o
         36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
         30          0          0          0          0         68   llshl.o
         32          0          0          0          0         68   llushr.o
+        36          0          0          0          0        108   memseta.o
         98          0          0          0          0         92   uldiv.o
+       222          0          0          0          0        100   ddiv.o
+       186          0          0          0          0        176   depilogue.o
+        34          0          0          0          0         76   dflti.o
+       228          0          0          0          0         96   dmul.o
+        38          0          0          0          0         68   f2d.o
 
     ----------------------------------------------------------------------
-       248         16          0          0          0        296   Library Totals
+      1078         16          0          0          0        920   Library Totals
          2          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-       246         16          0          0          0        296   mc_w.l
+       368         16          0          0          0        404   mc_w.l
+       708          0          0          0          0        516   mf_w.l
 
     ----------------------------------------------------------------------
-       248         16          0          0          0        296   Library Totals
+      1078         16          0          0          0        920   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -1431,15 +1732,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1504        154        580          4       1028      47509   Grand Totals
-      1504        154        580          4       1028      47509   ELF Image Totals
-      1504        154        580          4          0          0   ROM Totals
+      6972        322        580        312       1024      98339   Grand Totals
+      6972        322        580         80       1024      98339   ELF Image Totals (compressed)
+      6972        322        580         80          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 2084 (   2.04kB)
-    Total RW  Size (RW Data + ZI Data)              1032 (   1.01kB)
-    Total ROM Size (Code + RO Data + RW Data)       2088 (   2.04kB)
+    Total RO  Size (Code + RO Data)                 7552 (   7.38kB)
+    Total RW  Size (RW Data + ZI Data)              1336 (   1.30kB)
+    Total ROM Size (Code + RO Data + RW Data)       7632 (   7.45kB)
 
 ==============================================================================
 

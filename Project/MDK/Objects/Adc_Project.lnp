@@ -32,6 +32,9 @@
 ".\objects\system_at32f435_437.o"
 ".\objects\startup_at32f435_437.o"
 ".\objects\main.o"
+".\objects\nafe11388_if.o"
+".\objects\bsp_spi.o"
+".\objects\bsp_nafe11388.o"
 --library_type=microlib --strict --scatter ".\Objects\Adc_Project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

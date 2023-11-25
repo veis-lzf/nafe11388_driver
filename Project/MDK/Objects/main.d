@@ -39,3 +39,5 @@
 .\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_emac.h
 .\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_dvp.h
 .\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_usb.h
+.\objects\main.o: ..\..\devices\nafe11388_if.h
+.\objects\main.o: ..\..\UsrApp\api_qmc_common.h
