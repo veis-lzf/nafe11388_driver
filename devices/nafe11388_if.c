@@ -47,7 +47,7 @@ static NAFE_chnConfig_t gs_ChnConfig[CHANNEL_AMT] = {
     {
         .chnIndex = 2u,									/* Channel index */
         .inputSel = kNafeInputSel_hvsig,				/* Input type - HV signals: H = HV_AIP - HV_AIN */
-        .hvAip = kNafeHvInputPos_ai1p,					/* TEMP_AFE */
+        .hvAip = kNafeHvInputPos_ai2p,					/* TEMP_AFE */
         .hvAin = kNafeHvInputNeg_gnd,					/* GND */
         .gain = kNafeChnGain_0p8x,						/* Channel gain 0.8x */
         .dataRateCode = 4u,								/* Data rate code */
@@ -59,7 +59,7 @@ static NAFE_chnConfig_t gs_ChnConfig[CHANNEL_AMT] = {
         .chnIndex = 3u,									/* Channel index */
         .inputSel = kNafeInputSel_hvsig,				/* Input type - HV signals: H = HV_AIP - HV_AIN */
         .hvAip = kNafeHvInputPos_gnd,					/* GND */
-        .hvAin = kNafeHvInputNeg_ai1n,					/* TEMP_AFE1 */
+        .hvAin = kNafeHvInputNeg_ai2n,					/* TEMP_AFE1 */
         .gain = kNafeChnGain_0p8x,						/* Channel gain 0.8x */
         .dataRateCode = 4u,								/* Data rate code */
         .adcSinc = kNafeAdcSinc_sinc4,					/* Sinc type */
@@ -69,7 +69,7 @@ static NAFE_chnConfig_t gs_ChnConfig[CHANNEL_AMT] = {
     {
         .chnIndex = 4u,									/* Channel index */
         .inputSel = kNafeInputSel_hvsig,				/* Input type - HV signals: H = HV_AIP - HV_AIN */
-        .hvAip = kNafeHvInputPos_ai2p,					/* TEMP_AFE */
+        .hvAip = kNafeHvInputPos_ai3p,					/* TEMP_AFE */
         .hvAin = kNafeHvInputNeg_gnd,					/* GND */
         .gain = kNafeChnGain_0p8x,						/* Channel gain 0.8x */
         .dataRateCode = 4u,								/* Data rate code */
@@ -81,7 +81,7 @@ static NAFE_chnConfig_t gs_ChnConfig[CHANNEL_AMT] = {
         .chnIndex = 5u,									/* Channel index */
         .inputSel = kNafeInputSel_hvsig,				/* Input type - HV signals: H = HV_AIP - HV_AIN */
         .hvAip = kNafeHvInputPos_gnd,					/* GND */
-        .hvAin = kNafeHvInputNeg_ai2n,					/* TEMP_AFE1 */
+        .hvAin = kNafeHvInputNeg_ai3n,					/* TEMP_AFE1 */
         .gain = kNafeChnGain_0p8x,						/* Channel gain 0.8x */
         .dataRateCode = 4u,								/* Data rate code */
         .adcSinc = kNafeAdcSinc_sinc4,					/* Sinc type */
@@ -91,7 +91,7 @@ static NAFE_chnConfig_t gs_ChnConfig[CHANNEL_AMT] = {
     {
         .chnIndex = 6u,									/* Channel index */
         .inputSel = kNafeInputSel_hvsig,				/* Input type - HV signals: H = HV_AIP - HV_AIN */
-        .hvAip = kNafeHvInputPos_ai3p,					/* TEMP_AFE */
+        .hvAip = kNafeHvInputPos_ai4p,					/* TEMP_AFE */
         .hvAin = kNafeHvInputNeg_gnd,					/* GND */
         .gain = kNafeChnGain_0p8x,						/* Channel gain 0.8x */
         .dataRateCode = 4u,								/* Data rate code */
@@ -103,7 +103,7 @@ static NAFE_chnConfig_t gs_ChnConfig[CHANNEL_AMT] = {
         .chnIndex = 7u,									/* Channel index */
         .inputSel = kNafeInputSel_hvsig,				/* Input type - HV signals: H = HV_AIP - HV_AIN */
         .hvAip = kNafeHvInputPos_gnd,					/* GND */
-        .hvAin = kNafeHvInputNeg_ai3n,					/* TEMP_AFE1 */
+        .hvAin = kNafeHvInputNeg_ai4n,					/* TEMP_AFE1 */
         .gain = kNafeChnGain_0p8x,						/* Channel gain 0.8x */
         .dataRateCode = 4u,								/* Data rate code */
         .adcSinc = kNafeAdcSinc_sinc4,					/* Sinc type */

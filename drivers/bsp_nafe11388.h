@@ -197,7 +197,13 @@
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
-
+/*
+? Single-channel single-reading (SCSR)
+? Single-channel continuous-reading (SCCR)
+? Multichannel single-reading (MCSR)
+? Multichannel multireading (MCMR)
+? Multichannel continuous reading (MCCR)
+*/
 typedef enum
 {
     kNafeSampleMode_none = 0u,
