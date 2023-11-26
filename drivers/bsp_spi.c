@@ -305,18 +305,18 @@ void bsp_spi_transmit_halfword(uint8_t spix, uint16_t data)
     }
     else if(spix == SPI_Seq2)
     {
-        while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
-        spi_i2s_data_transmit(SPI1, data);
+        while(spi_i2s_flag_get(SPI2, SPI_I2S_TDBE_FLAG) == RESET);
+        spi_i2s_data_transmit(SPI2, data);
     }
     else if(spix == SPI_Seq3)
     {
-        while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
-        spi_i2s_data_transmit(SPI1, data);
+        while(spi_i2s_flag_get(SPI3, SPI_I2S_TDBE_FLAG) == RESET);
+        spi_i2s_data_transmit(SPI3, data);
     }
     else if(spix == SPI_Seq4)
     {
-        while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
-        spi_i2s_data_transmit(SPI1, data);
+        while(spi_i2s_flag_get(SPI4, SPI_I2S_TDBE_FLAG) == RESET);
+        spi_i2s_data_transmit(SPI4, data);
     }
 
     bsp_spi_transmit_done(spix);
