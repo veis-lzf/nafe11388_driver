@@ -8,7 +8,7 @@
 #define MASK_CHANNEL_0    0x0001
 #define MASK_CHANNEL_1    0x0002
 #define MASK_CHANNEL_2    0x0004
-#define ADC_CHANNEL_3     0x0008
+#define MASK_CHANNEL_3    0x0008
 #define MASK_CHANNEL_4    0x0010
 #define MASK_CHANNEL_5    0x0020
 #define MASK_CHANNEL_6    0x0040

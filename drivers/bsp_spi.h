@@ -19,7 +19,7 @@ typedef enum _SPI_Mode
 } SPI_Mode_t;
 
 /**
- * @brief SPI速率
+ * @brief SPI速率   APB1=120M
  */
 typedef enum _SPI_Speed
 {
@@ -123,48 +123,12 @@ void bsp_spi_config(uint8_t spix, uint8_t mode, uint8_t speed, uint8_t is_master
 void bsp_register_callback(transmit_cb t_cb, received_cb r_cb);
 
 /**
- * @brief SPI发送一个字节数据，同步接口
- * @param spix SPI序号
- * @param data 
- * @retval none
- */
-void bsp_spi_transmit_byte(uint8_t spix, uint8_t data);
-
-/**
- * @brief SPI发送2个字节数据，同步接口
- * @param spix SPI序号
- * @param data 待发送的数据
- * @retval none
- */
-void bsp_spi_transmit_halfword(uint8_t spix, uint16_t data);
-
-/**
  * @brief 发送完成通知函数
  * @param spix SPI序号
  * @retval none
  */
 void bsp_spi_transmit_done(uint8_t spix);
 
-/**
- * @brief SPI读取1个字节数据，同步接口
- * @param spix SPI序号
- * @retval uint8_t 返回读取到的数据
- */
-uint8_t bsp_spi_received_byte(uint8_t spix);
-
-/**
- * @brief SPI读取2个字节数据，同步接口
- * @param spix SPI序号
- * @retval uint16_t 返回读取到的数据
- */
-uint16_t bsp_spi_received_halfword(uint8_t spix);
-
-/**
- * @brief 接受完成通知函数
- * @param spix
- * @retval none
- */
-void bsp_spi_received_done(uint8_t spix);
 
 /**
  * @brief 设置片选引脚状态
@@ -172,6 +136,28 @@ void bsp_spi_received_done(uint8_t spix);
  * @retval none
  */
 void bsp_spi_set_cs(uint8_t status);
+
+
+/*
+由于外设的写操作和读操作是同步完成的。
+如果只进行写操作，主机只需忽略接收到的字节；
+反之，若主机要读取从机的一个字节，就必须发送一个空字节来引发从机的传输。
+*/
+/**
+ * @brief SPI读取或写入一个字的数据，读取时候传入0xffff
+ * @param spix SPI序号
+ * @param TxData 待发送的数据
+ * @retval none
+ */
+uint16_t SPI_ReadWriteHalfWord(uint8_t spix, uint16_t TxData);
+
+/**
+ * @brief SPI读取或写入一个字节的数据，读取时候传入0xff
+ * @param spix SPI序号
+ * @param TxData 待发送的数据
+ * @retval none
+ */
+uint8_t SPI_ReadWriteByte(uint8_t spix, uint8_t TxData);
 
 /*end of public function****************************************************************/
 

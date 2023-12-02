@@ -197,16 +197,16 @@ static void nafe1138_gpio_config(void)
 void nafe11388_init(void)
 {
     // 初始化相关GPIO(当前驱动未使用到硬件GPIO，使用软件命令进行连续转换)
-	nafe1138_gpio_config();
+//	nafe1138_gpio_config();
 
     // 初始化SPI
     bsp_spi_config(
         SPI_Seq2, 
         SPI_Mode_1, 
-        SPI_Speed_2M2bps, 
+        SPI_Speed_4M5bps, 
         SPI_Mode_Master, 
         SPI_Type_FULL_DUPLEX, 
-        SPI_Frame_8BIT, 
+        SPI_Frame_8BIT,
         SPI_FRAME_MSB
         );
 

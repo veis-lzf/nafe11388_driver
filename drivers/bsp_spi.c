@@ -69,7 +69,7 @@ static void bsp_spi_gpio_config(void)
     gpio_pin_mux_config(SPI2_SCK_PORT, SPI2_SCK_SOURCE, SPI2_IOMUX_SEQ);
 
     /* spi2 miso pin */
-    gpio_initstructure.gpio_pull           = GPIO_PULL_UP;
+    gpio_initstructure.gpio_pull           = GPIO_PULL_NONE;
     gpio_initstructure.gpio_pins           = SPI2_MISO_PINMUX;
     gpio_init(SPI2_MISO_PORT, &gpio_initstructure);
     gpio_pin_mux_config(SPI2_MISO_PORT, SPI2_MISO_SOURCE, SPI2_IOMUX_SEQ);
@@ -184,28 +184,28 @@ void bsp_spi_config(uint8_t spix, uint8_t mode, uint8_t speed, uint8_t is_master
     case SPI_Speed_560Kbps:
         spi_init_struct.mclk_freq_division = SPI_MCLK_DIV_256;
         break;
-    case SPI_Speed_1M1bps:
+    case SPI_Speed_1M1bps: // 0.9375
         spi_init_struct.mclk_freq_division = SPI_MCLK_DIV_128;
         break;
-    case SPI_Speed_2M2bps:
+    case SPI_Speed_2M2bps: // 1.875
         spi_init_struct.mclk_freq_division = SPI_MCLK_DIV_64;
         break;
-    case SPI_Speed_4M5bps:
+    case SPI_Speed_4M5bps: // 3.75
         spi_init_struct.mclk_freq_division = SPI_MCLK_DIV_32;
         break;
-    case SPI_Speed_9Mbps:
+    case SPI_Speed_9Mbps: // 7.5
         spi_init_struct.mclk_freq_division = SPI_MCLK_DIV_16;
         break;    
-    case SPI_Speed_18Mbps:
+    case SPI_Speed_18Mbps: // 15
         spi_init_struct.mclk_freq_division = SPI_MCLK_DIV_8;
         break;
-    case SPI_Speed_36Mbps:
+    case SPI_Speed_36Mbps: // 30
         spi_init_struct.mclk_freq_division = SPI_MCLK_DIV_4;
         break;
-    case SPI_Speed_48Mbps:
+    case SPI_Speed_48Mbps: // 40
         spi_init_struct.mclk_freq_division = SPI_MCLK_DIV_3;
         break;
-    case SPI_Speed_72Mbps:
+    case SPI_Speed_72Mbps: // 60
         spi_init_struct.mclk_freq_division = SPI_MCLK_DIV_2;
         break;
     }
@@ -272,55 +272,85 @@ void bsp_register_callback(transmit_cb t_cb, received_cb r_cb)
 }
 
 /**
- * @brief SPI发送一个字节数据，同步接口
+ * @brief SPI读取或写入一个字的数据，读取时候传入0xffff
  * @param spix SPI序号
- * @param data 
+ * @param TxData 待发送的数据
  * @retval none
  */
-void bsp_spi_transmit_byte(uint8_t spix, uint8_t data)
+uint16_t SPI_ReadWriteHalfWord(uint8_t spix, uint16_t TxData)
 {
-#if NO_USE_MICROLIB
-	assert(spix > SPI_Seq3);
-#endif
-	
-    bsp_spi_transmit_halfword(spix, data);
-}
-
-/**
- * @brief SPI发送2个字节数据，同步接口
- * @param spix SPI序号
- * @param data 待发送的数据
- * @retval none
- */
-void bsp_spi_transmit_halfword(uint8_t spix, uint16_t data)
-{
-#if NO_USE_MICROLIB
-	assert(spix > SPI_Seq3);
-#endif
-	
-    if(spix == SPI_Seq1)
+		uint16_t ret = 0xffff;
+	  if(spix == SPI_Seq1)
     {
-        while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
-        spi_i2s_data_transmit(SPI1, data);
+				while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
+				SPI2->dt = TxData;
+				while(spi_i2s_flag_get(SPI1, SPI_I2S_RDBF_FLAG) == RESET);
+				ret = SPI2->dt;
     }
     else if(spix == SPI_Seq2)
     {
-        while(spi_i2s_flag_get(SPI2, SPI_I2S_TDBE_FLAG) == RESET);
-        spi_i2s_data_transmit(SPI2, data);
+				while(spi_i2s_flag_get(SPI2, SPI_I2S_TDBE_FLAG) == RESET);
+				SPI2->dt = TxData;
+				while(spi_i2s_flag_get(SPI2, SPI_I2S_RDBF_FLAG) == RESET);
+				ret = SPI2->dt;
     }
     else if(spix == SPI_Seq3)
     {
-        while(spi_i2s_flag_get(SPI3, SPI_I2S_TDBE_FLAG) == RESET);
-        spi_i2s_data_transmit(SPI3, data);
+				while(spi_i2s_flag_get(SPI3, SPI_I2S_TDBE_FLAG) == RESET);
+				SPI3->dt = TxData;
+				while(spi_i2s_flag_get(SPI3, SPI_I2S_RDBF_FLAG) == RESET);
+				ret = SPI3->dt;
     }
     else if(spix == SPI_Seq4)
     {
-        while(spi_i2s_flag_get(SPI4, SPI_I2S_TDBE_FLAG) == RESET);
-        spi_i2s_data_transmit(SPI4, data);
+				while(spi_i2s_flag_get(SPI4, SPI_I2S_TDBE_FLAG) == RESET);
+				SPI4->dt = TxData;
+				while(spi_i2s_flag_get(SPI4, SPI_I2S_RDBF_FLAG) == RESET);
+				ret = SPI4->dt;
     }
-
-    bsp_spi_transmit_done(spix);
+		return ret;
 }
+
+/**s
+ * @brief SPI读取或写入一个字节的数据，读取时候传入0xff
+ * @param spix SPI序号
+ * @param TxData 待发送的数据
+ * @retval none
+ */
+uint8_t SPI_ReadWriteByte(uint8_t spix, uint8_t TxData)
+{
+		uint8_t ret = 0xff;
+	  if(spix == SPI_Seq1)
+    {
+				while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
+				SPI2->dt = TxData;
+				while(spi_i2s_flag_get(SPI1, SPI_I2S_RDBF_FLAG) == RESET);
+				ret = SPI2->dt;
+    }
+    else if(spix == SPI_Seq2)
+    {
+				while(spi_i2s_flag_get(SPI2, SPI_I2S_TDBE_FLAG) == RESET);
+				SPI2->dt = TxData;
+				while(spi_i2s_flag_get(SPI2, SPI_I2S_RDBF_FLAG) == RESET);
+				ret = SPI2->dt;
+    }
+    else if(spix == SPI_Seq3)
+    {
+				while(spi_i2s_flag_get(SPI3, SPI_I2S_TDBE_FLAG) == RESET);
+				SPI3->dt = TxData;
+				while(spi_i2s_flag_get(SPI3, SPI_I2S_RDBF_FLAG) == RESET);
+				ret = SPI3->dt;
+    }
+    else if(spix == SPI_Seq4)
+    {
+				while(spi_i2s_flag_get(SPI4, SPI_I2S_TDBE_FLAG) == RESET);
+				SPI4->dt = TxData;
+				while(spi_i2s_flag_get(SPI4, SPI_I2S_RDBF_FLAG) == RESET);
+				ret = SPI4->dt;
+    }
+		return ret;
+}
+
 
 /**
  * @brief 发送完成通知函数
@@ -335,60 +365,6 @@ void bsp_spi_transmit_done(uint8_t spix)
 	
     if(transmit_callback_func != NULL)
         transmit_callback_func(spix);
-}
-
-/**
- * @brief SPI读取1个字节数据，同步接口
- * @param spix SPI序号
- * @retval uint8_t 返回读取到的数据
- */
-uint8_t bsp_spi_received_byte(uint8_t spix)
-{
-#if NO_USE_MICROLIB
-	assert(spix > SPI_Seq3);
-#endif
-	
-    uint8_t retval = 0;
-    retval = bsp_spi_received_halfword(spix);
-    return retval;
-}
-
-/**
- * @brief SPI读取2个字节数据，同步接口
- * @param spix SPI序号
- * @retval uint16_t 返回读取到的数据
- */
-uint16_t bsp_spi_received_halfword(uint8_t spix)
-{
-#if NO_USE_MICROLIB
-	assert(spix > SPI_Seq3);
-#endif
-	
-    uint16_t retval = 0;
-    if(spix == SPI_Seq1)
-    {
-        while(spi_i2s_flag_get(SPI1, SPI_I2S_RDBF_FLAG) == RESET);
-        retval = spi_i2s_data_receive(SPI1);
-    }
-    else if(spix == SPI_Seq2)
-    {
-        while(spi_i2s_flag_get(SPI2, SPI_I2S_RDBF_FLAG) == RESET);
-        retval = spi_i2s_data_receive(SPI2);
-    }
-    else if(spix == SPI_Seq3)
-    {
-        while(spi_i2s_flag_get(SPI3, SPI_I2S_RDBF_FLAG) == RESET);
-        retval = spi_i2s_data_receive(SPI3);
-    }
-    else if(spix == SPI_Seq4)
-    {
-        while(spi_i2s_flag_get(SPI4, SPI_I2S_RDBF_FLAG) == RESET);
-        retval = spi_i2s_data_receive(SPI4);
-    }
-
-    bsp_spi_received_done(spix);
-    
-    return retval;
 }
 
 /**
