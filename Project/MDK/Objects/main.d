@@ -1,43 +1,43 @@
-.\objects\main.o: ..\..\UsrApp\main.c
-.\objects\main.o: ..\..\bsp\platform\inc\at32f435_437_clock.h
-.\objects\main.o: ..\..\bsp\cmsis\cm4\device_support\at32f435_437.h
-.\objects\main.o: ..\..\bsp\cmsis\cm4\core_support\core_cm4.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\main.o: ..\..\bsp\cmsis\cm4\core_support\cmsis_version.h
-.\objects\main.o: ..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h
-.\objects\main.o: ..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h
-.\objects\main.o: ..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h
-.\objects\main.o: ..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_def.h
-.\objects\main.o: ..\..\bsp\platform\inc\at32f435_437_conf.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_crm.h
-.\objects\main.o: ..\..\bsp\cmsis\cm4\device_support\at32f435_437.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_tmr.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_ertc.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_gpio.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_i2c.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_usart.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_pwc.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_can.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_adc.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_dac.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_spi.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_dma.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_debug.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_flash.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_crc.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_wwdt.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_wdt.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_exint.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_sdio.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_xmc.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_acc.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_misc.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_edma.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_qspi.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_scfg.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_emac.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_dvp.h
-.\objects\main.o: ..\..\bsp\drivers\inc\at32f435_437_usb.h
-.\objects\main.o: ..\..\devices\nafe11388_if.h
-.\objects\main.o: ..\..\UsrApp\api_qmc_common.h
+./objects/main.o: ..\..\UsrApp\main.c \
+  ..\..\bsp\platform\inc\at32f435_437_clock.h \
+  ..\..\bsp\cmsis\cm4\device_support\at32f435_437.h \
+  ..\..\bsp\cmsis\cm4\core_support\core_cm4.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\..\bsp\cmsis\cm4\core_support\cmsis_version.h \
+  ..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h \
+  ..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  ..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h \
+  ..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h \
+  ..\..\bsp\drivers\inc\at32f435_437_def.h \
+  ..\..\bsp\platform\inc\at32f435_437_conf.h \
+  ..\..\bsp\drivers\inc\at32f435_437_crm.h \
+  ..\..\bsp\drivers\inc\at32f435_437_tmr.h \
+  ..\..\bsp\drivers\inc\at32f435_437_ertc.h \
+  ..\..\bsp\drivers\inc\at32f435_437_gpio.h \
+  ..\..\bsp\drivers\inc\at32f435_437_i2c.h \
+  ..\..\bsp\drivers\inc\at32f435_437_usart.h \
+  ..\..\bsp\drivers\inc\at32f435_437_pwc.h \
+  ..\..\bsp\drivers\inc\at32f435_437_can.h \
+  ..\..\bsp\drivers\inc\at32f435_437_adc.h \
+  ..\..\bsp\drivers\inc\at32f435_437_dac.h \
+  ..\..\bsp\drivers\inc\at32f435_437_spi.h \
+  ..\..\bsp\drivers\inc\at32f435_437_dma.h \
+  ..\..\bsp\drivers\inc\at32f435_437_debug.h \
+  ..\..\bsp\drivers\inc\at32f435_437_flash.h \
+  ..\..\bsp\drivers\inc\at32f435_437_crc.h \
+  ..\..\bsp\drivers\inc\at32f435_437_wwdt.h \
+  ..\..\bsp\drivers\inc\at32f435_437_wdt.h \
+  ..\..\bsp\drivers\inc\at32f435_437_exint.h \
+  ..\..\bsp\drivers\inc\at32f435_437_sdio.h \
+  ..\..\bsp\drivers\inc\at32f435_437_xmc.h \
+  ..\..\bsp\drivers\inc\at32f435_437_acc.h \
+  ..\..\bsp\drivers\inc\at32f435_437_misc.h \
+  ..\..\bsp\drivers\inc\at32f435_437_edma.h \
+  ..\..\bsp\drivers\inc\at32f435_437_qspi.h \
+  ..\..\bsp\drivers\inc\at32f435_437_scfg.h \
+  ..\..\bsp\drivers\inc\at32f435_437_emac.h \
+  ..\..\bsp\drivers\inc\at32f435_437_dvp.h \
+  ..\..\bsp\drivers\inc\at32f435_437_usb.h ..\..\devices\nafe11388_if.h \
+  ..\..\UsrApp\api_qmc_common.h ..\..\drivers\bsp_spi.h

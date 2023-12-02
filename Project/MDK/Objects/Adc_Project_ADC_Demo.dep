@@ -1,14 +1,16 @@
 Dependencies for Project 'Adc_Project', Target 'ADC_Demo': (DO NOT MODIFY !)
-CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (..\..\bsp\drivers\src\at32f435_437_acc.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_acc.o --omf_browse .\objects\at32f435_437_acc.crf --depend .\objects\at32f435_437_acc.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (..\..\bsp\drivers\src\at32f435_437_acc.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_acc.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -39,15 +41,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_adc.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_adc.o --omf_browse .\objects\at32f435_437_adc.crf --depend .\objects\at32f435_437_adc.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_adc.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_adc.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -78,15 +82,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_can.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_can.o --omf_browse .\objects\at32f435_437_can.crf --depend .\objects\at32f435_437_can.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_can.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_can.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -117,15 +123,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_crc.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_crc.o --omf_browse .\objects\at32f435_437_crc.crf --depend .\objects\at32f435_437_crc.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_crc.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_crc.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -156,15 +164,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_crm.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_crm.o --omf_browse .\objects\at32f435_437_crm.crf --depend .\objects\at32f435_437_crm.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_crm.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_crm.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -195,15 +205,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_dac.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_dac.o --omf_browse .\objects\at32f435_437_dac.crf --depend .\objects\at32f435_437_dac.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_dac.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_dac.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -234,15 +246,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_debug.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_debug.o --omf_browse .\objects\at32f435_437_debug.crf --depend .\objects\at32f435_437_debug.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_debug.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_debug.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -273,15 +287,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_dma.c)(0x653A6AA9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_dma.o --omf_browse .\objects\at32f435_437_dma.crf --depend .\objects\at32f435_437_dma.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_dma.c)(0x653A6AA9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_dma.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -312,15 +328,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_dvp.c)(0x653A6AA9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_dvp.o --omf_browse .\objects\at32f435_437_dvp.crf --depend .\objects\at32f435_437_dvp.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_dvp.c)(0x653A6AA9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_dvp.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -351,15 +369,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_edma.c)(0x653A6AA9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_edma.o --omf_browse .\objects\at32f435_437_edma.crf --depend .\objects\at32f435_437_edma.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_edma.c)(0x653A6AA9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_edma.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -390,15 +410,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_emac.c)(0x653A6AA9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_emac.o --omf_browse .\objects\at32f435_437_emac.crf --depend .\objects\at32f435_437_emac.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_emac.c)(0x653A6AA9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_emac.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -429,15 +451,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_ertc.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_ertc.o --omf_browse .\objects\at32f435_437_ertc.crf --depend .\objects\at32f435_437_ertc.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_ertc.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_ertc.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -468,15 +492,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_exint.c)(0x653A6AA9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_exint.o --omf_browse .\objects\at32f435_437_exint.crf --depend .\objects\at32f435_437_exint.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_exint.c)(0x653A6AA9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_exint.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -507,15 +533,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_flash.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_flash.o --omf_browse .\objects\at32f435_437_flash.crf --depend .\objects\at32f435_437_flash.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_flash.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_flash.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -546,15 +574,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_gpio.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_gpio.o --omf_browse .\objects\at32f435_437_gpio.crf --depend .\objects\at32f435_437_gpio.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_gpio.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_gpio.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -585,15 +615,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_i2c.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_i2c.o --omf_browse .\objects\at32f435_437_i2c.crf --depend .\objects\at32f435_437_i2c.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_i2c.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_i2c.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -624,15 +656,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_misc.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_misc.o --omf_browse .\objects\at32f435_437_misc.crf --depend .\objects\at32f435_437_misc.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_misc.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_misc.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -663,15 +697,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_pwc.c)(0x653A6AA9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_pwc.o --omf_browse .\objects\at32f435_437_pwc.crf --depend .\objects\at32f435_437_pwc.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_pwc.c)(0x653A6AA9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_pwc.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -702,15 +738,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_qspi.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_qspi.o --omf_browse .\objects\at32f435_437_qspi.crf --depend .\objects\at32f435_437_qspi.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_qspi.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_qspi.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -741,15 +779,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_scfg.c)(0x653A6AA9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_scfg.o --omf_browse .\objects\at32f435_437_scfg.crf --depend .\objects\at32f435_437_scfg.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_scfg.c)(0x653A6AA9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_scfg.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -780,15 +820,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_sdio.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_sdio.o --omf_browse .\objects\at32f435_437_sdio.crf --depend .\objects\at32f435_437_sdio.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_sdio.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_sdio.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -819,15 +861,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_spi.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_spi.o --omf_browse .\objects\at32f435_437_spi.crf --depend .\objects\at32f435_437_spi.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_spi.c)(0x656A9D23)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_spi.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -858,15 +902,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_tmr.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_tmr.o --omf_browse .\objects\at32f435_437_tmr.crf --depend .\objects\at32f435_437_tmr.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_tmr.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_tmr.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -897,15 +943,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_usart.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_usart.o --omf_browse .\objects\at32f435_437_usart.crf --depend .\objects\at32f435_437_usart.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_usart.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_usart.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -936,15 +984,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_usb.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_usb.o --omf_browse .\objects\at32f435_437_usb.crf --depend .\objects\at32f435_437_usb.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_usb.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_usb.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -975,15 +1025,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_wdt.c)(0x653A6AA9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_wdt.o --omf_browse .\objects\at32f435_437_wdt.crf --depend .\objects\at32f435_437_wdt.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_wdt.c)(0x653A6AA9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_wdt.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -1014,15 +1066,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_wwdt.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_wwdt.o --omf_browse .\objects\at32f435_437_wwdt.crf --depend .\objects\at32f435_437_wwdt.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_wwdt.c)(0x653A6AAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_wwdt.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -1053,15 +1107,17 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\drivers\src\at32f435_437_xmc.c)(0x653A6AA9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_xmc.o --omf_browse .\objects\at32f435_437_xmc.crf --depend .\objects\at32f435_437_xmc.d)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+F (..\..\bsp\drivers\src\at32f435_437_xmc.c)(0x653A6AA9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_xmc.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
@@ -1092,18 +1148,20 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\platform\src\at32f435_437_clock.c)(0x653A6ADC)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_clock.o --omf_browse .\objects\at32f435_437_clock.crf --depend .\objects\at32f435_437_clock.d)
-I (..\..\bsp\platform\inc\at32f435_437_clock.h)(0x653A6ADC)
+F (..\..\bsp\platform\src\at32f435_437_clock.c)(0x656AA86B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_clock.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_clock.h)(0x656AA86B)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_tmr.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_ertc.h)(0x653A6AA9)
@@ -1132,18 +1190,20 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\platform\src\at32f435_437_int.c)(0x653A6ADC)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\at32f435_437_int.o --omf_browse .\objects\at32f435_437_int.crf --depend .\objects\at32f435_437_int.d)
+F (..\..\bsp\platform\src\at32f435_437_int.c)(0x653A6ADC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/at32f435_437_int.o -MD)
 I (..\..\bsp\platform\inc\at32f435_437_int.h)(0x653A6ADC)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_tmr.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_ertc.h)(0x653A6AA9)
@@ -1172,17 +1232,19 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.c)(0x653A6AAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\system_at32f435_437.o --omf_browse .\objects\system_at32f435_437.crf --depend .\objects\system_at32f435_437.d)
+F (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.c)(0x656A9AC7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/system_at32f435_437.o -MD)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_tmr.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_ertc.h)(0x653A6AA9)
@@ -1211,19 +1273,21 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-F (..\..\bsp\cmsis\cm4\device_support\startup\mdk\startup_at32f435_437.s)(0x653A6AAA)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 531" --pd "AT32F435ZGT7 SETA 1"--list .\listings\startup_at32f435_437.lst --xref -o .\objects\startup_at32f435_437.o --depend .\objects\startup_at32f435_437.d)
-F (..\..\UsrApp\main.c)(0x65619162)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (..\..\bsp\platform\inc\at32f435_437_clock.h)(0x653A6ADC)
+F (..\..\bsp\cmsis\cm4\device_support\startup\mdk\startup_at32f435_437.s)(0x653A6AAA)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"AT32F435ZGT7 SETA 1"-o ./objects/startup_at32f435_437.o)
+F (..\..\UsrApp\main.c)(0x656B4A08)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/main.o -MD)
+I (..\..\bsp\platform\inc\at32f435_437_clock.h)(0x656AA86B)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_tmr.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_ertc.h)(0x653A6AA9)
@@ -1252,20 +1316,23 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-I (..\..\devices\nafe11388_if.h)(0x6561907F)
+I (..\..\devices\nafe11388_if.h)(0x656B4887)
 I (..\..\UsrApp\api_qmc_common.h)(0x65619418)
-F (..\..\devices\nafe11388_if.c)(0x656192E3)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\nafe11388_if.o --omf_browse .\objects\nafe11388_if.crf --depend .\objects\nafe11388_if.d)
-I (..\..\devices\nafe11388_if.h)(0x6561907F)
+I (..\..\drivers\bsp_spi.h)(0x656B4B2B)
+F (..\..\devices\nafe11388_if.c)(0x656B444B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/nafe11388_if.o -MD)
+I (..\..\devices\nafe11388_if.h)(0x656B4887)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_tmr.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_ertc.h)(0x653A6AA9)
@@ -1295,21 +1362,23 @@ I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
 I (..\..\UsrApp\api_qmc_common.h)(0x65619418)
-I (..\..\drivers\bsp_nafe11388.h)(0x65618F12)
-I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x6560E050)
-I (..\..\drivers\bsp_spi.h)(0x65618F72)
-F (..\..\drivers\bsp_spi.c)(0x65619319)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\bsp_spi.o --omf_browse .\objects\bsp_spi.crf --depend .\objects\bsp_spi.d)
-I (..\..\drivers\bsp_spi.h)(0x65618F72)
+I (..\..\drivers\bsp_nafe11388.h)(0x65619E42)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x637AECBA)
+I (..\..\drivers\bsp_spi.h)(0x656B4B2B)
+F (..\..\drivers\bsp_spi.c)(0x656B4B5E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/bsp_spi.o -MD)
+I (..\..\drivers\bsp_spi.h)(0x656B4B2B)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_tmr.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_ertc.h)(0x653A6AA9)
@@ -1338,19 +1407,21 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x6560E050)
-F (..\..\drivers\bsp_nafe11388.c)(0x656193C8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\drivers -I ..\..\devices -I ..\..\debug -I ..\..\UsrApp -I ..\..\bsp\cmsis\cm4\device_support -I ..\..\bsp\drivers\inc -I ..\..\bsp\platform\inc -I ..\..\bsp\cmsis\cm4\core_support -I ..\..\devices -I ..\..\drivers-IC:\Users\W10\AppData\Local\Arm\Packs\ArteryTek\AT32F435_437_DFP\2.1.5\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o .\objects\bsp_nafe11388.o --omf_browse .\objects\bsp_nafe11388.crf --depend .\objects\bsp_nafe11388.d)
-I (..\..\drivers\bsp_spi.h)(0x65618F72)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x637AECBA)
+F (..\..\drivers\bsp_nafe11388.c)(0x656B4BD3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../drivers -I ../../devices -I ../../debug -I ../../UsrApp -I ../../bsp/cmsis/cm4/device_support -I ../../bsp/drivers/inc -I ../../bsp/platform/inc -I ../../bsp/cmsis/cm4/core_support -I ../../devices -I ../../drivers-IC:/Users/chaohong.gu/AppData/Local/Arm/Packs/ArteryTek/AT32F435_437_DFP/2.1.5/Device/Include-D__UVISION_VERSION="538" -DAT32F435ZGT7 -DAT32F435ZGT7 -DUSE_STDPERIPH_DRIVER-o ./objects/bsp_nafe11388.o -MD)
+I (..\..\drivers\bsp_spi.h)(0x656B4B2B)
 I (..\..\bsp\cmsis\cm4\device_support\at32f435_437.h)(0x653A6C23)
 I (..\..\bsp\cmsis\cm4\core_support\core_cm4.h)(0x653A6AAA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_version.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\core_support\cmsis_compiler.h)(0x653A6AAA)
-I (..\..\bsp\cmsis\cm4\core_support\cmsis_armcc.h)(0x653A6AAA)
+I (..\..\bsp\cmsis\cm4\core_support\cmsis_armclang.h)(0x653A6AAA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\..\bsp\cmsis\cm4\core_support\mpu_armv7.h)(0x653A6AAA)
 I (..\..\bsp\cmsis\cm4\device_support\system_at32f435_437.h)(0x653A6AAA)
 I (..\..\bsp\drivers\inc\at32f435_437_def.h)(0x653A6AA9)
-I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656191E6)
+I (..\..\bsp\platform\inc\at32f435_437_conf.h)(0x656AA86B)
 I (..\..\bsp\drivers\inc\at32f435_437_crm.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_tmr.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_ertc.h)(0x653A6AA9)
@@ -1379,8 +1450,8 @@ I (..\..\bsp\drivers\inc\at32f435_437_scfg.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_emac.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_dvp.h)(0x653A6AA9)
 I (..\..\bsp\drivers\inc\at32f435_437_usb.h)(0x653A6AA9)
-I (..\..\drivers\bsp_nafe11388.h)(0x65618F12)
-I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x6560E050)
+I (..\..\drivers\bsp_nafe11388.h)(0x65619E42)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x637AECBA)
 I (..\..\UsrApp\api_qmc_common.h)(0x65619418)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 F (..\..\docs\readme.txt)(0x6560AFF9)()
