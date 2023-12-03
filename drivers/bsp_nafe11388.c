@@ -38,25 +38,25 @@ status_t NAFE_HAL_writeRegBlock(uint32_t cmd, uint32_t data, uint32_t dataBits)
     bsp_spi_set_cs(ENABLE_CS); // 拉低片选
 
     // 发送设备地址（bit15）+读(1)/写(0)（bit14）+寄存器地址（bit1~bit13）
-		SPI_ReadWriteByte(SPI_Seq2, (cmd >> 8));
-		SPI_ReadWriteByte(SPI_Seq2, (cmd & 0XFF));
+    SPI_ReadWriteByte(SPI_Seq2, (cmd >> 8));
+    SPI_ReadWriteByte(SPI_Seq2, (cmd & 0XFF));
 
     // 发送DATA[23..0]
-		if(dataBits == 24)
-		{
-				SPI_ReadWriteByte(SPI_Seq2, (data >> 16)&0xff);
-				SPI_ReadWriteByte(SPI_Seq2, (data >> 8)&0xff);
-				SPI_ReadWriteByte(SPI_Seq2, (data & 0xff));
-		}
-		else if(dataBits == 16)
-		{
-				SPI_ReadWriteByte(SPI_Seq2, (data >> 8)&0xff);
-				SPI_ReadWriteByte(SPI_Seq2, (data & 0xff));
-		}
-		else if(dataBits == 8)
-		{
-				SPI_ReadWriteByte(SPI_Seq2, (data & 0xff));
-		}
+    if(dataBits == 24)
+    {
+        SPI_ReadWriteByte(SPI_Seq2, (data >> 16)&0xff);
+        SPI_ReadWriteByte(SPI_Seq2, (data >> 8)&0xff);
+        SPI_ReadWriteByte(SPI_Seq2, (data & 0xff));
+    }
+    else if(dataBits == 16)
+    {
+        SPI_ReadWriteByte(SPI_Seq2, (data >> 8)&0xff);
+        SPI_ReadWriteByte(SPI_Seq2, (data & 0xff));
+    }
+    else if(dataBits == 8)
+    {
+        SPI_ReadWriteByte(SPI_Seq2, (data & 0xff));
+    }
 		
     bsp_spi_set_cs(DISABLE_CS); // 释放片选
 
@@ -80,30 +80,29 @@ status_t NAFE_HAL_readRegBlock(uint32_t cmd, uint32_t *data, uint32_t dataBits)
     bsp_spi_set_cs(ENABLE_CS); // 拉低片选
 
     // 发送设备地址（bit15）+读(1)/写(0)（bit14）+寄存器地址（bit1~bit13）
-		SPI_ReadWriteByte(SPI_Seq2, (cmd >> 8));
-		SPI_ReadWriteByte(SPI_Seq2, (cmd & 0XFF));
+    SPI_ReadWriteByte(SPI_Seq2, (cmd >> 8));
+    SPI_ReadWriteByte(SPI_Seq2, (cmd & 0XFF));
 	
     // 读取数据
     *data = 0;
     if(dataBits == 24)
     {
-				(*data) =	SPI_ReadWriteByte(SPI_Seq2, 0xff);
-				(*data) <<= 8;
-				(*data) |=	SPI_ReadWriteByte(SPI_Seq2, 0xff);
-				(*data)  <<= 8;
-				(*data) |=	SPI_ReadWriteByte(SPI_Seq2, 0xff);
-
+        (*data) = SPI_ReadWriteByte(SPI_Seq2, 0xff);
+        (*data) <<= 8;
+        (*data) |= SPI_ReadWriteByte(SPI_Seq2, 0xff);
+        (*data) <<= 8;
+        (*data) |= SPI_ReadWriteByte(SPI_Seq2, 0xff);
     }
-		else if(dataBits == 16)
-		{
-				(*data) =	SPI_ReadWriteByte(SPI_Seq2, 0xff);
-				(*data) <<= 8;
-				(*data) |=	SPI_ReadWriteByte(SPI_Seq2, 0xff);
-		}
-		else if(dataBits == 8)
-		{
-				(*data) =	SPI_ReadWriteByte(SPI_Seq2, 0xff);
-		}
+    else if(dataBits == 16)
+    {
+        (*data) = SPI_ReadWriteByte(SPI_Seq2, 0xff);
+        (*data) <<= 8;
+        (*data) |= SPI_ReadWriteByte(SPI_Seq2, 0xff);
+    }
+    else if(dataBits == 8)
+    {
+        (*data) = SPI_ReadWriteByte(SPI_Seq2, 0xff);
+    }
 
     bsp_spi_set_cs(DISABLE_CS); // 释放片选
 
@@ -122,8 +121,8 @@ status_t NAFE_HAL_sendCmdBlock(uint32_t cmd)
     bsp_spi_set_cs(ENABLE_CS); // 拉低片选
 		
     // 发送设备地址（bit15）+读(1)/写(0)（bit14）+寄存器地址（bit1~bit13）
-		SPI_ReadWriteByte(SPI_Seq2, (cmd >> 8));
-		SPI_ReadWriteByte(SPI_Seq2, (cmd & 0XFF));
+    SPI_ReadWriteByte(SPI_Seq2, (cmd >> 8));
+    SPI_ReadWriteByte(SPI_Seq2, (cmd & 0XFF));
 	
     bsp_spi_set_cs(DISABLE_CS); // 释放片选
 

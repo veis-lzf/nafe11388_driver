@@ -43,7 +43,6 @@
 ///////////////////////////////////////////end of pins define/////////////////////////////////////////////////
 
 
-
 // 回调函数指针变量
 static transmit_cb transmit_callback_func = NULL;
 static received_cb received_callback_func = NULL;
@@ -279,36 +278,36 @@ void bsp_register_callback(transmit_cb t_cb, received_cb r_cb)
  */
 uint16_t SPI_ReadWriteHalfWord(uint8_t spix, uint16_t TxData)
 {
-		uint16_t ret = 0xffff;
-	  if(spix == SPI_Seq1)
+	uint16_t ret = 0xffff;
+	if(spix == SPI_Seq1)
     {
-				while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
-				SPI2->dt = TxData;
-				while(spi_i2s_flag_get(SPI1, SPI_I2S_RDBF_FLAG) == RESET);
-				ret = SPI2->dt;
+        while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
+        SPI2->dt = TxData;
+        while(spi_i2s_flag_get(SPI1, SPI_I2S_RDBF_FLAG) == RESET);
+        ret = SPI2->dt;
     }
     else if(spix == SPI_Seq2)
     {
-				while(spi_i2s_flag_get(SPI2, SPI_I2S_TDBE_FLAG) == RESET);
-				SPI2->dt = TxData;
-				while(spi_i2s_flag_get(SPI2, SPI_I2S_RDBF_FLAG) == RESET);
-				ret = SPI2->dt;
+        while(spi_i2s_flag_get(SPI2, SPI_I2S_TDBE_FLAG) == RESET);
+        SPI2->dt = TxData;
+        while(spi_i2s_flag_get(SPI2, SPI_I2S_RDBF_FLAG) == RESET);
+        ret = SPI2->dt;
     }
     else if(spix == SPI_Seq3)
     {
-				while(spi_i2s_flag_get(SPI3, SPI_I2S_TDBE_FLAG) == RESET);
-				SPI3->dt = TxData;
-				while(spi_i2s_flag_get(SPI3, SPI_I2S_RDBF_FLAG) == RESET);
-				ret = SPI3->dt;
+        while(spi_i2s_flag_get(SPI3, SPI_I2S_TDBE_FLAG) == RESET);
+        SPI3->dt = TxData;
+        while(spi_i2s_flag_get(SPI3, SPI_I2S_RDBF_FLAG) == RESET);
+        ret = SPI3->dt;
     }
     else if(spix == SPI_Seq4)
     {
-				while(spi_i2s_flag_get(SPI4, SPI_I2S_TDBE_FLAG) == RESET);
-				SPI4->dt = TxData;
-				while(spi_i2s_flag_get(SPI4, SPI_I2S_RDBF_FLAG) == RESET);
-				ret = SPI4->dt;
+        while(spi_i2s_flag_get(SPI4, SPI_I2S_TDBE_FLAG) == RESET);
+        SPI4->dt = TxData;
+        while(spi_i2s_flag_get(SPI4, SPI_I2S_RDBF_FLAG) == RESET);
+        ret = SPI4->dt;
     }
-		return ret;
+	return ret;
 }
 
 /**s
@@ -319,36 +318,36 @@ uint16_t SPI_ReadWriteHalfWord(uint8_t spix, uint16_t TxData)
  */
 uint8_t SPI_ReadWriteByte(uint8_t spix, uint8_t TxData)
 {
-		uint8_t ret = 0xff;
-	  if(spix == SPI_Seq1)
+	uint8_t ret = 0xff;
+	if(spix == SPI_Seq1)
     {
-				while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
-				SPI2->dt = TxData;
-				while(spi_i2s_flag_get(SPI1, SPI_I2S_RDBF_FLAG) == RESET);
-				ret = SPI2->dt;
+        while(spi_i2s_flag_get(SPI1, SPI_I2S_TDBE_FLAG) == RESET);
+        SPI2->dt = TxData;
+        while(spi_i2s_flag_get(SPI1, SPI_I2S_RDBF_FLAG) == RESET);
+        ret = SPI2->dt;
     }
     else if(spix == SPI_Seq2)
     {
-				while(spi_i2s_flag_get(SPI2, SPI_I2S_TDBE_FLAG) == RESET);
-				SPI2->dt = TxData;
-				while(spi_i2s_flag_get(SPI2, SPI_I2S_RDBF_FLAG) == RESET);
-				ret = SPI2->dt;
+        while(spi_i2s_flag_get(SPI2, SPI_I2S_TDBE_FLAG) == RESET);
+        SPI2->dt = TxData;
+        while(spi_i2s_flag_get(SPI2, SPI_I2S_RDBF_FLAG) == RESET);
+        ret = SPI2->dt;
     }
     else if(spix == SPI_Seq3)
     {
-				while(spi_i2s_flag_get(SPI3, SPI_I2S_TDBE_FLAG) == RESET);
-				SPI3->dt = TxData;
-				while(spi_i2s_flag_get(SPI3, SPI_I2S_RDBF_FLAG) == RESET);
-				ret = SPI3->dt;
+        while(spi_i2s_flag_get(SPI3, SPI_I2S_TDBE_FLAG) == RESET);
+        SPI3->dt = TxData;
+        while(spi_i2s_flag_get(SPI3, SPI_I2S_RDBF_FLAG) == RESET);
+        ret = SPI3->dt;
     }
     else if(spix == SPI_Seq4)
     {
-				while(spi_i2s_flag_get(SPI4, SPI_I2S_TDBE_FLAG) == RESET);
-				SPI4->dt = TxData;
-				while(spi_i2s_flag_get(SPI4, SPI_I2S_RDBF_FLAG) == RESET);
-				ret = SPI4->dt;
+        while(spi_i2s_flag_get(SPI4, SPI_I2S_TDBE_FLAG) == RESET);
+        SPI4->dt = TxData;
+        while(spi_i2s_flag_get(SPI4, SPI_I2S_RDBF_FLAG) == RESET);
+        ret = SPI4->dt;
     }
-		return ret;
+	return ret;
 }
 
 
